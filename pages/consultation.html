@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body class="is-locked">
+  <div class="page-transition" aria-hidden="true"></div>
+  <div class="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+  <div class="scroll-progress"></div>
 
   <!-- Preloader -->
   <div class="preloader" role="status" aria-label="Loading JCL Staging">
@@ -77,6 +80,8 @@
           <h1 style="font-family:var(--font-serif);font-size:clamp(2.75rem,5vw,5rem);font-weight:300;line-height:1.05;color:var(--color-charcoal);margin-bottom:1rem">Tell Us About Your Home.</h1>
           <p style="font-family:var(--font-sans);font-weight:300;color:var(--color-taupe);line-height:1.85;margin-bottom:3rem">We will review your details and reach out within 24 hours to discuss your project.</p>
 
+          <div class="consultation-form" id="consultation-form">
+
           <!-- Progress bars: 6 bars -->
           <div class="form-progress" role="progressbar" aria-label="Form progress">
             <div class="form-progress__bar is-active"></div>
@@ -86,8 +91,6 @@
             <div class="form-progress__bar"></div>
             <div class="form-progress__bar"></div>
           </div>
-
-          <div class="consultation-form" id="consultation-form">
 
             <!-- STEP 1 -->
             <div class="form-step is-active" data-step="1">
@@ -280,7 +283,7 @@
         <div style="margin-top:3rem;text-align:center">
           <img src="../images/olivia-avatar.jpg" alt="Olivia, AI Design Concierge" style="width:60px;height:60px;border-radius:50%;border:2px solid var(--color-champagne);margin:0 auto 1rem;display:block" />
           <p style="font-family:var(--font-sans);font-size:0.875rem;color:var(--color-stone);line-height:1.7;margin-bottom:1.25rem">Have questions? Chat with Olivia, our AI Design Concierge.</p>
-          <button class="concierge-fab" style="position:relative;bottom:auto;right:auto;box-shadow:none" onclick="document.getElementById('concierge-fab').click()" aria-label="Open concierge chat">
+          <button class="concierge-inline-trigger" style="position:relative;bottom:auto;right:auto;box-shadow:none" onclick="document.getElementById('concierge-panel').classList.add('is-open')" aria-label="Open concierge chat">
             <img src="../images/olivia-avatar.jpg" alt="Olivia" class="concierge-fab__avatar" />
             <span class="concierge-fab__label">Chat with Olivia</span>
             <span class="concierge-fab__online" aria-label="Online"></span>
@@ -359,7 +362,7 @@
 
   <!-- Sticky CTA -->
   <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
-    <a href="consultation.html" class="sticky-cta__link">Book Your Complimentary Consultation</a>
+    <a href="consultation.html" class="btn btn--primary">Book Your Complimentary Consultation</a>
   </div>
 
   <!-- Concierge FAB -->

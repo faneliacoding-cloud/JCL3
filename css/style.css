@@ -646,6 +646,37 @@ ul, ol { list-style: none; }
 .cta-section__desc { font-family: var(--font-sans); font-size: var(--text-lg); font-weight: 300; color: var(--color-stone); line-height: 1.85; margin-bottom: 3.5rem; }
 .cta-section__actions { display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
 
+/* ─── CTA ALIASES (subpage variant class names) ─────────────── */
+.cta-section__overlay { position: absolute; inset: 0; background: rgba(44,40,37,0.6); }
+.cta-section__title { font-family: var(--font-serif); font-size: clamp(2.5rem,5.5vw,5.5rem); font-weight: 300; color: var(--color-ivory); line-height: 1.08; margin-bottom: 2rem; }
+.cta-section__body { font-family: var(--font-sans); font-size: var(--text-lg); font-weight: 300; color: var(--color-stone); line-height: 1.85; margin-bottom: 3.5rem; }
+
+/* ─── FOOTER ALIASES (subpage variant class names) ────────────── */
+.footer__col { /* layout handled by parent grid */ }
+.footer__col--brand .footer__brand, .footer__col--brand { display: flex; flex-direction: column; gap: 1.5rem; }
+.footer__heading { font-family: var(--font-sans); font-size: var(--text-xs); font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-ivory); margin-bottom: 1.75rem; }
+.footer__newsletter-copy { font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 300; color: var(--color-stone); line-height: 1.75; margin-bottom: 1.25rem; }
+
+/* ─── NAV ACTIVE STATE ───────────────────────────────────────── */
+.nav__link.is-active { color: var(--color-champagne); }
+.nav__link.is-active::after { width: 100%; }
+.nav-mobile__link.is-active { color: var(--color-champagne); }
+
+/* ─── SERVICE PAGE LAYOUT ────────────────────────────────────── */
+.service-content { display: flex; flex-direction: column; gap: 1.5rem; }
+.service-list { display: flex; flex-direction: column; gap: 0.75rem; list-style: none; margin: 0.5rem 0 1.5rem; }
+.service-list li { font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 300; color: var(--color-taupe); line-height: 1.7; padding-left: 1.25rem; position: relative; }
+.service-list li::before { content: '—'; position: absolute; left: 0; color: var(--color-champagne); }
+
+/* ─── STATS ALIASES ──────────────────────────────────────────── */
+.stat__number { font-family: var(--font-serif); font-size: clamp(3rem,5vw,5.5rem); font-weight: 300; color: var(--color-champagne); display: block; margin-bottom: 0.5rem; }
+.stat__unit { font-family: var(--font-serif); font-size: 0.6em; }
+.stats-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+
+/* ─── TEXT UTILITIES ─────────────────────────────────────────── */
+.text-xs { font-size: var(--text-xs); }
+.small { font-size: var(--text-sm); }
+
 /* ─── INSTAGRAM ──────────────────────────────────────────────── */
 .instagram { padding: var(--section-gap) 0 0; background: var(--bg-primary); }
 .instagram__header { text-align: center; margin-bottom: 3rem; }

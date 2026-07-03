@@ -17,6 +17,10 @@
 </head>
 <body class="is-locked">
 
+  <div class="page-transition" aria-hidden="true"></div>
+  <div class="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+  <div class="scroll-progress"></div>
+
   <!-- Preloader -->
   <div class="preloader" role="status" aria-label="Loading JCL Staging">
     <div class="preloader__logo">
@@ -138,7 +142,7 @@
             <!-- Concierge CTA -->
             <div class="reveal" style="border-top:1px solid var(--color-stone);padding-top:2rem">
               <p style="font-family:var(--font-sans);font-size:0.875rem;color:var(--color-taupe);line-height:1.8;margin-bottom:1rem">For immediate assistance, Olivia — our AI Design Concierge — is available 24/7.</p>
-              <button class="concierge-fab" style="position:relative;bottom:auto;right:auto;box-shadow:0 4px 20px rgba(44,40,37,0.15)" onclick="document.getElementById('concierge-fab').click()" aria-label="Open concierge chat">
+              <button class="concierge-inline-trigger" style="position:relative;bottom:auto;right:auto;box-shadow:0 4px 20px rgba(44,40,37,0.15)" onclick="document.getElementById('concierge-panel').classList.add('is-open')" aria-label="Open concierge chat">
                 <img src="../images/olivia-avatar.jpg" alt="Olivia" class="concierge-fab__avatar" />
                 <span class="concierge-fab__label">Chat with Olivia</span>
                 <span class="concierge-fab__online" aria-label="Online"></span>
@@ -149,19 +153,19 @@
           <!-- RIGHT: Contact Form -->
           <form class="reveal reveal-delay-1" action="#" method="POST" style="display:flex;flex-direction:column;gap:2rem" aria-label="Contact form">
             <div>
-              <label for="contact-name" class="sr-only">Your full name</label>
+              <label for="contact-name" class="visually-hidden">Your full name</label>
               <input class="form-input" type="text" id="contact-name" name="name" placeholder="Your full name" aria-label="Full name" required />
             </div>
             <div>
-              <label for="contact-email" class="sr-only">Email address</label>
+              <label for="contact-email" class="visually-hidden">Email address</label>
               <input class="form-input" type="email" id="contact-email" name="email" placeholder="Email address" aria-label="Email" required />
             </div>
             <div>
-              <label for="contact-phone" class="sr-only">Phone number</label>
+              <label for="contact-phone" class="visually-hidden">Phone number</label>
               <input class="form-input" type="tel" id="contact-phone" name="phone" placeholder="Phone (optional)" aria-label="Phone" />
             </div>
             <div>
-              <label for="contact-role" class="sr-only">I am a…</label>
+              <label for="contact-role" class="visually-hidden">I am a…</label>
               <select class="form-input" id="contact-role" name="role" aria-label="I am a...">
                 <option value="" disabled selected>I am a… (select one)</option>
                 <option value="homeowner">Homeowner</option>
@@ -172,7 +176,7 @@
               </select>
             </div>
             <div>
-              <label for="contact-message" class="sr-only">Your message</label>
+              <label for="contact-message" class="visually-hidden">Your message</label>
               <textarea class="form-input" id="contact-message" name="message" rows="4" placeholder="Tell us about your project…" aria-label="Your message" style="resize:vertical"></textarea>
             </div>
             <div style="display:flex;flex-direction:column;gap:0.75rem;align-items:flex-start">
@@ -307,7 +311,7 @@
 
   <!-- Sticky CTA -->
   <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
-    <a href="consultation.html" class="sticky-cta__link">Book Your Complimentary Consultation</a>
+    <a href="consultation.html" class="btn btn--primary">Book Your Complimentary Consultation</a>
   </div>
 
   <!-- Concierge FAB -->
@@ -350,6 +354,6 @@
     </div>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js" defer></script>
 </body>
 </html>

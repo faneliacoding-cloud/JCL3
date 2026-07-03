@@ -10,7 +10,7 @@
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body class="is-locked">
@@ -87,7 +87,7 @@
 
     <!-- Page Hero -->
     <section class="page-hero">
-      <img src="../images/before-living.png" alt="Before and after living room transformation by JCL Staging" class="page-hero__image" />
+      <div class="page-hero__bg"><img src="../images/before-living.png" alt="JCL Transformations" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="page-hero__overlay"></div>
       <div class="page-hero__content">
         <div class="section-label section-label--light"><span>Before &amp; After</span></div>
@@ -131,7 +131,6 @@
 
         <div class="transformation__nav">
           <button class="transformation__dot is-active" aria-label="Slide 1"></button>
-          <button class="transformation__dot" aria-label="Slide 2"></button>
         </div>
 
         <!-- Designer Notes -->
@@ -143,7 +142,7 @@
     </section>
 
     <!-- Transformation 02 — Primary Suite -->
-    <section class="section transformation section--linen">
+    <section class="section transformation">
       <div class="container">
         <div class="transformation__header reveal">
           <div class="section-label section-label--light"><span>Transformation 02</span></div>
@@ -169,7 +168,6 @@
 
         <div class="transformation__nav">
           <button class="transformation__dot is-active" aria-label="Slide 1"></button>
-          <button class="transformation__dot" aria-label="Slide 2"></button>
         </div>
 
         <!-- Designer Notes -->
@@ -359,7 +357,7 @@
           <span class="concierge-panel__online-dot"></span>Design Concierge · Online
         </span>
       </div>
-      <button class="concierge-panel__close" aria-label="Close chat">X</button>
+      <button class="concierge-panel__close" id="concierge-close" aria-label="Close chat">X</button>
     </div>
     <div class="concierge-msgs" id="concierge-msgs">
       <div class="msg msg--ai">
