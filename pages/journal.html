@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editorial Journal | JCL Staging &amp; Design</title>
+  <meta name="description" content="Stories, insights, and design intelligence from JCL Staging &amp; Design's editorial journal. Luxury living, interior design, and home selling expertise." />
+  <meta property="og:title" content="Editorial Journal | JCL Staging &amp; Design" />
+  <meta property="og:description" content="Architectural insights, staging stories, and luxury market intelligence from JCL Staging &amp; Design." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="is-locked">
+
+  <!-- Page Transition -->
+  <div class="page-transition" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader__logo">
+      <div class="preloader__logo-text">JCL</div>
+      <div class="preloader__logo-sub">Staging &amp; Design</div>
+    </div>
+    <div class="preloader__line"></div>
+    <div class="preloader__tagline">Luxury begins with first impressions.</div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay">
+    <button class="search-close" data-search-close>Close X</button>
+    <div class="search-input-wrap">
+      <input class="search-field" type="search" placeholder="Search…" />
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav nav--light" id="nav">
+    <a class="nav__logo" href="../index.html">JCL<span class="nav__logo-sub">Staging &amp; Design</span></a>
+    <nav class="nav__links">
+      <a class="nav__link" href="portfolio.html">Portfolio</a>
+      <a class="nav__link" href="transformations.html">Transformations</a>
+      <a class="nav__link" href="services.html">Services</a>
+      <a class="nav__link is-active" href="journal.html">Journal</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__link" href="concierge.html">Concierge</a>
+    </nav>
+    <a class="nav__cta" href="consultation.html">Book Consultation</a>
+    <button class="nav__toggle" aria-label="Open menu">
+      <span class="nav__toggle-line"></span>
+      <span class="nav__toggle-line"></span>
+      <span class="nav__toggle-line"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="nav-mobile">
+    <ul class="nav-mobile__links">
+      <li><a class="nav-mobile__link" href="portfolio.html">Portfolio</a></li>
+      <li><a class="nav-mobile__link" href="transformations.html">Transformations</a></li>
+      <li><a class="nav-mobile__link" href="services.html">Services</a></li>
+      <li><a class="nav-mobile__link" href="journal.html">Journal</a></li>
+      <li><a class="nav-mobile__link" href="about.html">About</a></li>
+      <li><a class="nav-mobile__link" href="concierge.html">Concierge</a></li>
+      <li><a class="nav-mobile__link" href="consultation.html">Book Consultation</a></li>
+    </ul>
+    <div class="nav-mobile__bottom">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest">Pinterest</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <img src="../images/luxury-living-2.jpg" alt="JCL Staging Design Editorial Journal" class="page-hero__image" />
+      <div class="page-hero__overlay"></div>
+      <div class="page-hero__content">
+        <div class="section-label section-label--light"><span>Editorial Journal</span></div>
+        <h1 class="page-hero__title">Stories Worth Reading</h1>
+      </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="section" style="padding-bottom:0;">
+      <div class="container">
+        <div class="portfolio-filters" role="tablist" aria-label="Article category filters">
+          <button class="portfolio-filter is-active" data-filter="all" role="tab" aria-selected="true">All Articles</button>
+          <button class="portfolio-filter" data-filter="design" role="tab" aria-selected="false">Interior Design</button>
+          <button class="portfolio-filter" data-filter="living" role="tab" aria-selected="false">Luxury Living</button>
+          <button class="portfolio-filter" data-filter="selling" role="tab" aria-selected="false">Home Selling</button>
+          <button class="portfolio-filter" data-filter="architecture" role="tab" aria-selected="false">Architecture</button>
+          <button class="portfolio-filter" data-filter="trends" role="tab" aria-selected="false">Design Trends</button>
+          <button class="portfolio-filter" data-filter="behind" role="tab" aria-selected="false">Behind the Projects</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="section section--dark">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+          <!-- Image -->
+          <div style="aspect-ratio:3/4;overflow:hidden;border-radius:2px;">
+            <img src="../images/hero.png" alt="The Seven-Second Decision featured article" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
+          </div>
+          <!-- Content -->
+          <div>
+            <div class="section-label section-label--light"><span>Psychology of Buying</span></div>
+            <h2 style="font-family:var(--font-serif);font-size:clamp(2rem,3.5vw,3.25rem);font-weight:300;color:var(--color-ivory);margin-bottom:1.5rem;line-height:1.15;">The Seven-Second Decision: Why Buyers Know Before They Walk In</h2>
+            <p style="font-family:var(--font-sans);font-weight:300;color:var(--color-stone);line-height:1.9;margin-bottom:1rem;">Neuroscience tells us that the brain makes emotional decisions in fractions of a second — long before rational thought catches up. In real estate, this means buyers have already decided whether they want a home before they finish their first room.</p>
+            <p style="font-family:var(--font-sans);font-weight:300;color:var(--color-stone);line-height:1.9;margin-bottom:0;">Great staging speaks directly to this emotional brain. The quality of light, the warmth of materials, the sense that someone extraordinary lives here — these are the signals we engineer.</p>
+            <div style="font-family:var(--font-sans);font-size:0.75rem;color:var(--color-stone);letter-spacing:0.1em;display:flex;gap:1rem;align-items:center;margin-top:2rem;flex-wrap:wrap;">
+              <span>Julia Carias-Linares</span>
+              <span>·</span>
+              <span>June 2026</span>
+              <span>·</span>
+              <span>12 min read</span>
+            </div>
+            <div style="margin-top:2rem;">
+              <a class="btn btn--outline" href="#">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Grid -->
+    <section class="section">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:3rem;" id="articles-grid">
+
+          <!-- Article 1 -->
+          <article class="article" data-category="trends">
+            <div class="article__image-wrap" style="aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin-bottom:1.5rem;">
+              <img src="../images/kitchen.png" alt="The Materials of 2026" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;" loading="lazy" />
+            </div>
+            <div class="article__content">
+              <span class="article__category">Design Trends</span>
+              <h3 class="article__title">The Materials of 2026: What Luxury Buyers Are Seeking</h3>
+              <p class="article__excerpt">Travertine is back. Warm oak is everywhere. Here is what the most discerning buyers are responding to in 2026 and why it matters for your listing.</p>
+              <div class="article__meta">
+                <span>Alfredo Linares</span>
+                <span>·</span>
+                <span>8 min</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="article" data-category="behind">
+            <div class="article__image-wrap" style="aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin-bottom:1.5rem;">
+              <img src="../images/dining-room.png" alt="The 4M Listing" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;" loading="lazy" />
+            </div>
+            <div class="article__content">
+              <span class="article__category">Behind the Projects</span>
+              <h3 class="article__title">The $4M Listing That Sold for $4.7M</h3>
+              <p class="article__excerpt">When a Riverside Estate had sat on the market for 60 days, the seller called JCL. Three weeks later, it was sold above asking. Here is what changed.</p>
+              <div class="article__meta">
+                <span>JCL Editorial</span>
+                <span>·</span>
+                <span>10 min</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="article" data-category="selling">
+            <div class="article__image-wrap" style="aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin-bottom:1.5rem;">
+              <img src="../images/before-living.png" alt="Empty Rooms Sell for Less" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;" loading="lazy" />
+            </div>
+            <div class="article__content">
+              <span class="article__category">Home Selling</span>
+              <h3 class="article__title">Why Empty Rooms Sell for Less: The Neuroscience of Space</h3>
+              <p class="article__excerpt">Empty rooms feel smaller, colder, and less valuable than furnished ones. This is not opinion. It is science.</p>
+              <div class="article__meta">
+                <span>Julia Carias-Linares</span>
+                <span>·</span>
+                <span>7 min</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="article" data-category="architecture">
+            <div class="article__image-wrap" style="aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin-bottom:1.5rem;">
+              <img src="../images/model-home.jpg" alt="Architectural Harmony" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;" loading="lazy" />
+            </div>
+            <div class="article__content">
+              <span class="article__category">Architecture</span>
+              <h3 class="article__title">Architectural Harmony: When Staging Respects Great Design</h3>
+              <p class="article__excerpt">The best staging makes architecture feel inevitable. Here is how we approach homes where the design itself is the story.</p>
+              <div class="article__meta">
+                <span>JCL Editorial</span>
+                <span>·</span>
+                <span>9 min</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="article" data-category="living">
+            <div class="article__image-wrap" style="aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin-bottom:1.5rem;">
+              <img src="../images/after-living.png" alt="Hamptons Vacation Homes" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;" loading="lazy" />
+            </div>
+            <div class="article__content">
+              <span class="article__category">Luxury Living</span>
+              <h3 class="article__title">The Hamptons Property That Changed How We Stage Vacation Homes</h3>
+              <p class="article__excerpt">A waterfront rental that was averaging 60% occupancy reached 94% after a single seasonal staging. Here is the story.</p>
+              <div class="article__meta">
+                <span>Alfredo Linares</span>
+                <span>·</span>
+                <span>6 min</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="article" data-category="design">
+            <div class="article__image-wrap" style="aspect-ratio:16/9;overflow:hidden;border-radius:2px;margin-bottom:1.5rem;">
+              <img src="../images/before-after-bedroom.png" alt="Occupied Home Staging" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;" loading="lazy" />
+            </div>
+            <div class="article__content">
+              <span class="article__category">Interior Design</span>
+              <h3 class="article__title">Occupied Home Staging: The Art of Editing, Not Replacing</h3>
+              <p class="article__excerpt">The most skilled staging leaves a home feeling like the best version of itself. Here is how we elevate without erasing.</p>
+              <div class="article__meta">
+                <span>Julia Carias-Linares</span>
+                <span>·</span>
+                <span>11 min</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section section--linen" style="text-align:center;">
+      <div class="container">
+        <div class="section-label reveal" style="justify-content:center;"><span>Stay Informed</span></div>
+        <h2 class="reveal reveal-delay-1" style="font-family:var(--font-serif);font-size:clamp(2.5rem,4vw,4rem);font-weight:300;color:var(--color-charcoal);margin-bottom:0.75rem;">Design in Your Inbox</h2>
+        <p class="reveal reveal-delay-2" style="font-family:var(--font-sans);font-weight:300;color:var(--color-taupe);line-height:1.85;max-width:520px;margin:1rem auto 2.5rem;">Architectural insights, staging stories, and luxury market intelligence — curated monthly, never overwhelming.</p>
+        <form id="journal-newsletter" style="display:flex;gap:0.75rem;max-width:480px;margin:0 auto;align-items:flex-end;" class="reveal reveal-delay-3">
+          <input type="email" style="flex:1;border:none;border-bottom:1px solid var(--color-stone);padding:1rem 0;font-family:var(--font-sans);background:transparent;outline:none;font-size:1rem;color:var(--color-charcoal);" placeholder="Your email address" aria-label="Email address" required />
+          <button class="btn btn--primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section--forest" style="text-align:center;">
+      <div class="container">
+        <div class="section-label section-label--light" style="justify-content:center;"><span>Work with JCL</span></div>
+        <h2 style="font-family:var(--font-serif);font-size:clamp(2.5rem,4vw,4rem);font-weight:300;color:var(--color-ivory);margin-bottom:1.5rem;line-height:1.1;">Words are only the beginning.</h2>
+        <p style="font-family:var(--font-sans);font-weight:300;color:var(--color-stone);font-size:1.05rem;line-height:1.85;max-width:480px;margin:0 auto 2.5rem;">See what JCL can do for your property — from initial consultation to final reveal.</p>
+        <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;">
+          <a class="btn btn--primary" href="consultation.html">Book Consultation</a>
+          <a class="btn btn--outline" href="transformations.html">See Transformations</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Col 1: Brand -->
+        <div class="footer__col footer__col--brand">
+          <div class="footer__logo">JCL<span class="footer__logo-sub">Staging &amp; Design</span></div>
+          <p class="footer__tagline">Luxury begins with first impressions.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.598-.299-1.482c0-1.388.806-2.428 1.808-2.428.853 0 1.267.641 1.267 1.408 0 .858-.546 2.14-.828 3.33-.236.995.499 1.806 1.476 1.806 1.772 0 3.137-1.868 3.137-4.567 0-2.387-1.716-4.057-4.163-4.057-2.836 0-4.5 2.127-4.5 4.326 0 .857.33 1.775.742 2.278a.3.3 0 01.069.284c-.076.313-.244.995-.277 1.134-.044.183-.146.222-.337.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.967-.527-2.292-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Col 2: Explore -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Explore</h4>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="footer__link" href="transformations.html">Transformations</a></li>
+            <li><a class="footer__link" href="services.html">Services</a></li>
+            <li><a class="footer__link" href="journal.html">Journal</a></li>
+            <li><a class="footer__link" href="about.html">About</a></li>
+          </ul>
+        </div>
+        <!-- Col 3: Contact -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="consultation.html">Book Consultation</a></li>
+            <li><a class="footer__link" href="concierge.html">AI Concierge</a></li>
+            <li><a class="footer__link" href="contact.html">Get in Touch</a></li>
+            <li><a class="footer__link" href="faq.html">FAQ</a></li>
+            <li><a class="footer__link" href="mailto:info@jclstaging.com">info@jclstaging.com</a></li>
+          </ul>
+        </div>
+        <!-- Col 4: Newsletter -->
+        <div class="footer__col footer__col--newsletter">
+          <h4 class="footer__col-title">The Edit</h4>
+          <p class="footer__newsletter-desc">Design insights and luxury market intelligence, delivered monthly.</p>
+          <form class="footer__newsletter-form" id="footer-newsletter-journal">
+            <input type="email" class="footer__newsletter-input" placeholder="Your email address" aria-label="Email address" />
+            <button type="submit" class="btn btn--primary footer__newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 JCL Staging &amp; Design. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="privacy.html" class="footer__legal-link">Privacy Policy</a>
+          <a href="terms.html" class="footer__legal-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA -->
+  <div class="sticky-cta">
+    <a class="btn btn--primary" href="consultation.html">Book Now</a>
+  </div>
+
+  <!-- Concierge FAB -->
+  <button class="concierge-fab" id="concierge-fab" aria-label="Chat with Olivia">
+    <img class="concierge-fab__avatar" src="../images/olivia-avatar.jpg" alt="Olivia, Design Concierge" />
+    <span class="concierge-fab__label">Chat with Olivia</span>
+    <span class="concierge-fab__online"></span>
+  </button>
+
+  <!-- Concierge Panel -->
+  <div class="concierge-panel" id="concierge-panel" aria-hidden="true">
+    <div class="concierge-panel__header">
+      <img class="concierge-panel__avatar" src="../images/olivia-avatar.jpg" alt="Olivia" />
+      <div>
+        <span class="concierge-panel__name">Olivia</span>
+        <span class="concierge-panel__status">
+          <span class="concierge-panel__online-dot"></span>Design Concierge · Online
+        </span>
+      </div>
+      <button class="concierge-panel__close" aria-label="Close chat">X</button>
+    </div>
+    <div class="concierge-msgs" id="concierge-msgs">
+      <div class="msg msg--ai">
+        <img class="msg__av" src="../images/olivia-avatar.jpg" alt="Olivia" />
+        <div class="msg__bubble">Welcome to JCL Staging. I am Olivia, your Design Concierge. What brings you here today?</div>
+      </div>
+    </div>
+    <div class="concierge-suggestions">
+      <button class="concierge-suggestion">Recommend an article for me</button>
+      <button class="concierge-suggestion">How does staging work?</button>
+      <button class="concierge-suggestion">Book a consultation</button>
+    </div>
+    <div class="concierge-panel__footer">
+      <input class="concierge-input" type="text" placeholder="Message Olivia…" aria-label="Type your message" />
+      <button class="concierge-send" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
