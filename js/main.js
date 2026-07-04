@@ -334,6 +334,35 @@ class Olivia {
       const btn = e.target.closest('.concierge-suggestion');
       if (btn) { this.input.value = btn.textContent; this.submit(); }
     });
+    // Listen for language changes
+    on(document, 'langchange', e => this.onLangChange(e.detail?.lang || 'en'));
+  }
+  onLangChange(lang) {
+    const get = k => window.JCL_Lang?.t(k) || k;
+    // Update FAB label
+    const fabLabel = this.fab?.querySelector('.concierge-fab__label');
+    if (fabLabel) fabLabel.textContent = get('olivia_label');
+    // Update panel name + status
+    const nameEl = this.panel?.querySelector('.concierge-panel__name');
+    if (nameEl) nameEl.textContent = get('olivia_name');
+    const statusEl = this.panel?.querySelector('.concierge-panel__status');
+    if (statusEl) {
+      const dot = statusEl.querySelector('.concierge-panel__online-dot');
+      statusEl.textContent = get('olivia_status');
+      if (dot) statusEl.prepend(dot);
+    }
+    // Update input placeholder
+    if (this.input) this.input.placeholder = get('olivia_input_placeholder');
+    // Update suggestion buttons
+    if (this.suggs) {
+      const btns = this.suggs.querySelectorAll('.concierge-suggestion');
+      const suggestions = [get('olivia_sugg1'), get('olivia_sugg2'), get('olivia_sugg3')];
+      btns.forEach((btn, i) => { if (suggestions[i]) btn.textContent = suggestions[i]; });
+    }
+    // Notify user of switch in chat (only if panel has been opened)
+    if (this.msgs && this.panel?.classList.contains('is-open')) {
+      this.addMsg(get('olivia_lang_switch'), 'ai');
+    }
   }
   toggle() { this.panel.classList.contains('is-open') ? this.hide() : this.show(); }
   show()   { this.panel.classList.add('is-open'); this.input?.focus(); }
@@ -378,19 +407,34 @@ class Olivia {
   }
   clearTyping() { this._typingEl?.remove(); }
   reply(input) {
+    const lang = window.JCL_Lang?.lang || window.JCL_Lang?._lang || 'en';
     const q = input.toLowerCase();
-    if (/price|cost|rate|how much/.test(q)) return "Our staging investment varies by property size and scope. Most clients find that staging returns far more than the cost — often in the form of faster sales and higher offers. Tell me about your property and I can paint a clearer picture.";
+    if (lang === 'es') {
+      if (/precio|costo|tarifa|cu\u00e1nto/.test(q)) return 'La inversi\u00f3n en staging var\u00eda seg\u00fan el tama\u00f1o y alcance de la propiedad. La mayor\u00eda de nuestros clientes encuentran que el staging retorna mucho m\u00e1s que el costo. Cu\u00e9nteme sobre su propiedad y podr\u00e9 darle una idea m\u00e1s clara.';
+      if (/vac\u00eda|vac\u00edo|sin muebles|desocupada/.test(q)) return 'Las propiedades vac\u00edas son nuestra especialidad. Traemos mobiliario curado, arte e iluminaci\u00f3n que crean la experiencia emocional que los compradores necesitan para enamorarse. \u00bfQu\u00e9 tan grande es el espacio que desea preparar?';
+      if (/habitada|habitado|amueblada|viviendo/.test(q)) return 'El staging habitado es un arte hermoso \u2014 trabajamos con lo que ya est\u00e1 all\u00ed, editando, elevando y a\u00f1adiendo piezas curadas. La mayor\u00eda de los clientes quedan sorprendidos de lo diferente que luce su hogar. \u00bfEn qu\u00e9 habitaciones se enfoca m\u00e1s?';
+      if (/tiempo|cu\u00e1nto tiempo|r\u00e1pido|urgente/.test(q)) return 'Nuestro cronograma t\u00edpico de consulta a instalaci\u00f3n es de 5 a 10 d\u00edas. Para listados urgentes, hemos completado proyectos en tan solo 48 horas. \u00bfCu\u00e1ndo espera publicar su propiedad?';
+      if (/reservar|consulta|cita|programar|reuni\u00f3n/.test(q)) return 'Me encantar\u00eda organizar eso para usted. Ofrecemos llamadas de descubrimiento gratuitas de 30 minutos donde conocemos su propiedad y objetivos. \u00bfLe vendr\u00eda mejor por la ma\u00f1ana o por la tarde?';
+      if (/nueva york|manhattan|brooklyn|jersey|connecticut|tri.state/.test(q)) return 'Servimos toda el \u00e1rea Tri-State \u2014 Manhattan, Brooklyn, Queens, los Hamptons, Nueva Jersey y Connecticut. Donde sea que est\u00e9 su propiedad, estaremos all\u00ed.';
+      if (/portafolio|trabajo|ejemplo|proyecto|ver/.test(q)) return 'Nuestro portafolio presenta transformaciones extraordinarias \u2014 condominios \u00edntimos, fincas amplias, townhouses de lujo. Me encantar\u00eda encontrar los proyectos m\u00e1s similares al suyo. \u00bfQu\u00e9 tipo de hogar es?';
+      if (/constructor|hogar modelo|desarrollo|nueva construcci\u00f3n/.test(q)) return 'Trabajamos estrechamente con muchos de los mejores constructores y desarrolladores de la regi\u00f3n. El staging de hogares modelo es uno de nuestros servicios emblem\u00e1ticos. \u00bfCu\u00e1l es su proyecto?';
+      if (/hola|buenos d\u00edas|buenas tardes|buenas noches/.test(q)) return 'Qu\u00e9 placer. Cu\u00e9nteme \u2014 \u00bfest\u00e1 preparando una propiedad para la venta, buscando elevar un espacio habitado, o algo completamente diferente?';
+      if (/interior|dise\u00f1o|estilo/.test(q)) return 'El estilismo de interiores est\u00e1 en el coraz\u00f3n de todo lo que hacemos. Ya sea staging preventa o dise\u00f1o de estilo de vida puro, nuestro ojo para el espacio, la luz y los materiales es lo que distingue a JCL. \u00bfQu\u00e9 est\u00e1 imaginando?';
+      if (/lujo|exclusivo|premium/.test(q)) return 'El lujo est\u00e1 en nuestro ADN. Cada proyecto que tomamos, independientemente del precio, recibe el mismo nivel de cuidado, curadur\u00eda e intenci\u00f3n. \u00bfDe qu\u00e9 tipo de propiedad se trata?';
+      return 'Cada hogar que tocamos tiene su propia historia \u2014 y nos encanta aprenderla. Cu\u00e9nteme m\u00e1s sobre su propiedad y lo que espera lograr. Cuanto m\u00e1s entiendo, mejor puedo guiarle.';
+    }
+    if (/price|cost|rate|how much/.test(q)) return "Our staging investment varies by property size and scope. Most clients find that staging returns far more than the cost \u2014 often in the form of faster sales and higher offers. Tell me about your property and I can paint a clearer picture.";
     if (/vacant|empty|unfurnished/.test(q)) return "Vacant properties are our specialty. We bring in curated furnishings, art, and lighting that create the emotional experience buyers need to fall in love. How large is the space you're looking to stage?";
-    if (/occupied|living|furnished/.test(q)) return "Occupied staging is a beautiful art — we work with what's already there, editing, elevating, and adding curated pieces. Most clients are amazed at how different their home looks. Which rooms are you most focused on?";
-    if (/time|how long|quick|fast|urgent/.test(q)) return "Our typical timeline from consultation to installation is 5–10 days. For urgent listings, we've turned projects around in as little as 48 hours. When are you hoping to list?";
+    if (/occupied|living|furnished/.test(q)) return "Occupied staging is a beautiful art \u2014 we work with what's already there, editing, elevating, and adding curated pieces. Most clients are amazed at how different their home looks. Which rooms are you most focused on?";
+    if (/time|how long|quick|fast|urgent/.test(q)) return "Our typical timeline from consultation to installation is 5\u201310 days. For urgent listings, we've turned projects around in as little as 48 hours. When are you hoping to list?";
     if (/book|consult|appoint|schedule|meet/.test(q)) return "I'd love to arrange that for you. We offer complimentary 30-minute discovery calls where we learn about your property and goals. Would morning or afternoon work better for you?";
-    if (/new york|manhattan|brooklyn|nj|connecticut|jersey|tri.state/.test(q)) return "We serve the entire Tri-State area — Manhattan, Brooklyn, Queens, The Hamptons, New Jersey, and Connecticut. Wherever your property is, we'll be there.";
-    if (/portfolio|work|example|project|see/.test(q)) return "Our portfolio features some extraordinary transformations — intimate condos, sprawling estates, luxury townhomes. I'd love to find the projects most similar to yours. What type of home is it?";
-    if (/builder|model home|development|new construction/.test(q)) return "We work closely with many of the region's finest builders and developers. Model home staging is one of our signature services — we understand construction timelines and deliver results that sell communities. What's your project?";
-    if (/hello|hi|hey|good morning|good afternoon/.test(q)) return "What a pleasure. Tell me — are you preparing a home for sale, looking to elevate an occupied space, or something else entirely?";
+    if (/new york|manhattan|brooklyn|nj|connecticut|jersey|tri.state/.test(q)) return "We serve the entire Tri-State area \u2014 Manhattan, Brooklyn, Queens, The Hamptons, New Jersey, and Connecticut. Wherever your property is, we'll be there.";
+    if (/portfolio|work|example|project|see/.test(q)) return "Our portfolio features some extraordinary transformations \u2014 intimate condos, sprawling estates, luxury townhomes. I'd love to find the projects most similar to yours. What type of home is it?";
+    if (/builder|model home|development|new construction/.test(q)) return "We work closely with many of the region's finest builders and developers. Model home staging is one of our signature services \u2014 we understand construction timelines and deliver results that sell communities. What's your project?";
+    if (/hello|hi|hey|good morning|good afternoon/.test(q)) return "What a pleasure. Tell me \u2014 are you preparing a home for sale, looking to elevate an occupied space, or something else entirely?";
     if (/interior|design|styling/.test(q)) return "Interior styling is really at the heart of everything we do. Whether it's pre-sale staging or pure lifestyle design, our eye for space, light, and material is what sets JCL apart. What are you envisioning?";
     if (/luxury|high.end|upscale/.test(q)) return "Luxury is in our DNA. Every project we take on, regardless of price point, receives the same level of care, curation, and intention. What kind of property are we talking about?";
-    return "Every home we touch has its own story — and we love learning it. Tell me more about your property and what you're hoping to achieve. The more I understand, the better I can guide you.";
+    return "Every home we touch has its own story \u2014 and we love learning it. Tell me more about your property and what you're hoping to achieve. The more I understand, the better I can guide you.";
   }
 }
 
@@ -479,6 +523,7 @@ function initTheme() {
 }
 
 /* ─── BOOT ───────────────────────────────────────────────── */
+// NOTE: i18n.js must load before main.js (sets window.JCL_Lang)
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   new Preloader();

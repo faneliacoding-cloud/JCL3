@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n-title="meta_faq_title">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,8 +13,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- hreflang for bilingual SEO -->
+  <link id="hreflang-en" rel="alternate" hreflang="en" href="">
+  <link id="hreflang-es" rel="alternate" hreflang="es" href="">
+  <link id="hreflang-default" rel="alternate" hreflang="x-default" href="">
+  <!-- i18n translations -->
+  <script src="../js/i18n.js"></script>
 </head>
-<body class="is-locked">
+<body class="is-locked" data-page="faq">
 
   <div class="page-transition" aria-hidden="true"></div>
   <div class="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
@@ -44,7 +50,11 @@
       <a href="about.html" class="nav__link">About</a>
       <a href="concierge.html" class="nav__link">AI Concierge</a>
     </nav>
-    <a href="consultation.html" class="nav__cta">Book Consultation</a>
+    <a href="consultation.html" class="nav__cta" data-i18n="nav_book">Book Consultation</a>
+        <div class="lang-switcher" role="group" aria-label="Language selector">
+          <button class="lang-btn" data-lang-btn="en" aria-pressed="true" data-i18n="lang_en">EN</button>
+          <button class="lang-btn" data-lang-btn="es" aria-pressed="false" data-i18n="lang_es">ES</button>
+        </div>
     <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
       <span class="nav__toggle-line"></span>
       <span class="nav__toggle-line"></span>
@@ -52,6 +62,10 @@
     </button>
   </header>
   <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+        <div class="nav-mobile__lang" role="group" aria-label="Language selector">
+          <button class="nav-mobile__lang-btn lang-btn" data-lang-btn="en" aria-pressed="true" data-i18n="lang_en_full">English</button>
+          <button class="nav-mobile__lang-btn lang-btn" data-lang-btn="es" aria-pressed="false" data-i18n="lang_es_full">Español</button>
+        </div>
     <ul class="nav-mobile__links">
       <li><a href="portfolio.html" class="nav-mobile__link">Portfolio</a></li>
       <li><a href="transformations.html" class="nav-mobile__link">Transformations</a></li>
@@ -439,6 +453,7 @@
     </div>
   </div>
 
+  <script src="../js/i18n.js"></script>
   <script src="../js/main.js" defer></script>
 </body>
 </html>

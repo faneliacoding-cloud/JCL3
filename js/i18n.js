@@ -1,0 +1,1125 @@
+/* ═══════════════════════════════════════════════════════════
+   JCL STAGING — i18n TRANSLATIONS v1.0
+   English / Spanish | U.S. Hispanic Luxury Audience
+   Professional translations maintaining luxury brand voice
+══════════════════════════════════════════════════════════ */
+'use strict';
+
+window.JCL_I18N = {
+
+  en: {
+    /* ─── META ───────────────────────────────────────────── */
+    meta_home_title: "JCL Staging & Design | New York's Premier Luxury Home Staging Studio",
+    meta_home_desc: 'Award-winning home staging and interior design in New York City. JCL Staging & Design transforms properties into extraordinary homes that sell faster and above asking.',
+    meta_portfolio_title: 'Portfolio | JCL Staging & Design',
+    meta_portfolio_desc: 'Explore our portfolio of luxury home staging projects across New York City, New Jersey, and Connecticut.',
+    meta_services_title: 'Services | JCL Staging & Design',
+    meta_services_desc: 'From vacant home staging to model homes and virtual staging — every service, exceptionally delivered.',
+    meta_about_title: 'About | JCL Staging & Design',
+    meta_about_desc: 'Founded by Julia Carias-Linares and Alfredo Linares in 2017. Over 850 properties transformed across the Tri-State area.',
+    meta_contact_title: 'Contact | JCL Staging & Design',
+    meta_contact_desc: 'Get in touch with JCL Staging & Design. We serve New York City, New Jersey, and Connecticut.',
+    meta_faq_title: 'FAQ | JCL Staging & Design',
+    meta_faq_desc: 'Every question about luxury home staging, answered beautifully.',
+    meta_concierge_title: 'Meet Olivia — AI Design Concierge | JCL Staging & Design',
+    meta_concierge_desc: 'Chat with Olivia, your personal AI luxury design concierge, available 24/7.',
+    meta_consultation_title: 'Book a Consultation | JCL Staging & Design',
+    meta_consultation_desc: 'Begin your JCL staging journey. Tell us about your home and we will craft an extraordinary experience.',
+    meta_journal_title: 'Editorial Journal | JCL Staging & Design',
+    meta_journal_desc: 'Architectural insights, staging stories, and luxury market intelligence from the JCL team.',
+    meta_transformations_title: 'Transformations | JCL Staging & Design',
+    meta_transformations_desc: 'Before and after: see how JCL Staging transforms ordinary spaces into extraordinary homes.',
+    meta_404_title: 'Page Not Found | JCL Staging & Design',
+
+    /* ─── NAVIGATION ──────────────────────────────────────── */
+    nav_portfolio: 'Portfolio',
+    nav_transformations: 'Transformations',
+    nav_services: 'Services',
+    nav_journal: 'Journal',
+    nav_about: 'About',
+    nav_concierge: 'AI Concierge',
+    nav_book: 'Book Consultation',
+    nav_book_now: 'Book Now',
+    lang_en: 'EN',
+    lang_es: 'ES',
+    lang_en_full: 'English',
+    lang_es_full: 'Español',
+
+    /* ─── FOOTER ──────────────────────────────────────────── */
+    footer_tagline: 'Luxury begins with first impressions.',
+    footer_explore: 'Explore',
+    footer_contact: 'Contact',
+    footer_newsletter_heading: 'Stay Inspired',
+    footer_newsletter_desc: 'Curated design stories, staging insights, and market intelligence — delivered with intention.',
+    footer_newsletter_placeholder: 'Your email address',
+    footer_newsletter_btn: 'Subscribe',
+    footer_copyright: '© 2026 JCL Staging & Design. All rights reserved.',
+    footer_privacy: 'Privacy Policy',
+    footer_terms: 'Terms of Service',
+    footer_get_in_touch: 'Get in Touch',
+    footer_faq: 'FAQ',
+
+    /* ─── COMMON BUTTONS & LABELS ─────────────────────────── */
+    btn_book_consultation: 'Book a Consultation',
+    btn_explore_portfolio: 'Explore Our Portfolio',
+    btn_view_services: 'View Our Services',
+    btn_learn_more: 'Learn More',
+    btn_read_article: 'Read Article',
+    btn_subscribe: 'Subscribe',
+    btn_send_message: 'Send Message',
+    btn_continue: 'Continue →',
+    btn_back: 'Back',
+    btn_book_your_consultation: 'Book Your Consultation',
+    btn_explore_portfolio_short: 'Explore Portfolio',
+    btn_return_home: 'Return Home',
+    btn_start_conversation: 'Start a Conversation',
+    btn_book_with_human: 'Book with a Human',
+    label_before: 'Before',
+    label_after: 'After',
+    label_min_read: 'min read',
+
+    /* ─── PRELOADER ───────────────────────────────────────── */
+    preloader_tagline: 'Luxury begins with first impressions.',
+    preloader_sub: 'Staging & Design',
+
+    /* ─── HOMEPAGE ────────────────────────────────────────── */
+    hero_eyebrow: "New York's Premier Staging Studio",
+    hero_headline_1: 'Where Homes',
+    hero_headline_2: 'Become',
+    hero_headline_3: 'Unforgettable.',
+    hero_sub: "We don't just stage homes — we orchestrate the emotional experience that makes buyers fall in love before they finish the first room.",
+    hero_cta_primary: 'Explore Our Portfolio',
+    hero_cta_secondary: 'Book a Consultation',
+    hero_watch: 'Watch Our Story',
+    hero_scroll: 'Scroll',
+
+    stat_sell_above: 'Sell at or above asking',
+    stat_faster: 'Faster days on market',
+    stat_properties: 'Properties transformed',
+
+    brand_eyebrow: 'About JCL',
+    brand_headline_1: 'Design is not decoration.',
+    brand_headline_2: 'It is the language',
+    brand_headline_3: 'of first impressions.',
+    brand_text: 'Since 2017, JCL Staging & Design has transformed over 850 properties across the New York Tri-State area. Our work exists at the intersection of architectural vision, interior artistry, and emotional intelligence.',
+    brand_text2: "We don't stage homes to impress. We stage them to be felt.",
+    brand_cta: 'Our Story',
+
+    collection_eyebrow: 'What We Do',
+    collection_headline: 'An Extraordinary Suite of Services',
+    service_staging_title: 'Luxury Home Staging',
+    service_staging_desc: 'Full-service staging that transforms your property into an emotionally compelling, market-ready home.',
+    service_styling_title: 'Interior Styling',
+    service_styling_desc: 'The art of elevating occupied spaces — curating, editing, and adding precisely chosen pieces.',
+    service_model_title: 'Model Homes',
+    service_model_desc: 'Selling communities and lifestyles before a development is complete.',
+    service_vacation_title: 'Vacation Properties',
+    service_vacation_desc: 'Premium staging that commands higher rental rates and lasting guest loyalty.',
+    service_virtual_title: 'Virtual Staging',
+    service_virtual_desc: 'Photorealistic renders that create desire before the first showing.',
+    service_commercial_title: 'Commercial Interiors',
+    service_commercial_desc: 'Environments that attract the right clients and inspire the people within them.',
+    collection_cta: 'Explore All Services',
+
+    transform_eyebrow: 'The Work',
+    transform_headline: 'Before & After',
+    transform_sub: 'Every transformation is the result of intention, craft, and an intimate understanding of what moves buyers.',
+    transform_cta: 'See All Transformations',
+
+    estates_eyebrow: 'Selected Properties',
+    estates_headline: 'Properties That Defined a Standard',
+    estates_cta: 'View Full Portfolio',
+
+    process_eyebrow: 'How We Work',
+    process_headline: 'The JCL Process',
+    process_sub: 'From first conversation to final photograph, every step is intentional.',
+    process_step1_num: '01',
+    process_step1_title: 'Discovery',
+    process_step1_desc: 'We learn your property, your goals, and your timeline.',
+    process_step2_num: '02',
+    process_step2_title: 'Concept',
+    process_step2_desc: 'We develop a staging vision tailored to your specific buyer.',
+    process_step3_num: '03',
+    process_step3_title: 'Curation',
+    process_step3_desc: 'We select furnishings, art, and objects from our exclusive inventory.',
+    process_step4_num: '04',
+    process_step4_title: 'Installation',
+    process_step4_desc: 'Our team transforms your property in a single, seamless day.',
+    process_step5_num: '05',
+    process_step5_title: 'Reveal',
+    process_step5_desc: 'Photography ready. Market ready. Extraordinary.',
+
+    stories_eyebrow: 'Client Voices',
+    stories_headline: 'Words That Mean Everything',
+
+    journal_eyebrow: 'Editorial Journal',
+    journal_headline: 'Design. Strategy. Transformation.',
+    journal_sub: 'Stories, insights, and ideas from the world of luxury real estate.',
+    journal_cta: 'Read All Articles',
+
+    cta_home_eyebrow: 'Begin Your Journey',
+    cta_home_headline: 'Your Home Deserves to Be Unforgettable.',
+    cta_home_desc: 'Let us show you what extraordinary looks like.',
+    cta_primary: 'Book a Consultation',
+    cta_secondary: 'View Our Work',
+
+    /* ─── PORTFOLIO PAGE ──────────────────────────────────── */
+    portfolio_eyebrow: 'Our Work',
+    portfolio_headline: 'A Portfolio of Extraordinary Homes',
+    filter_all: 'All Work',
+    filter_luxury: 'Luxury Homes',
+    filter_condo: 'Condos',
+    filter_model: 'Model Homes',
+    filter_occupied: 'Occupied Staging',
+    filter_commercial: 'Commercial',
+    portfolio_cta_eyebrow: 'Begin Your Project',
+    portfolio_cta_headline: 'Ready to Transform Your Property?',
+    portfolio_cta_desc: 'Every extraordinary home begins with a conversation.',
+
+    /* ─── TRANSFORMATIONS PAGE ────────────────────────────── */
+    transform_page_eyebrow: 'Before & After',
+    transform_page_headline: 'The Art of Transformation',
+    transform_philosophy_eyebrow: 'The Philosophy',
+    transform_philosophy_headline: 'Every Space Holds a Hidden Story.',
+    transform_philosophy_desc: 'The difference between a house that sits on the market and one that sparks bidding wars is not always structural. It is emotional. It is the feeling that washes over a buyer the moment they walk in. Our transformations are designed to create that feeling — deliberately, precisely, and beautifully.',
+    transform_01_label: 'Transformation 01',
+    transform_01_title: 'Living Room · Upper East Side',
+    transform_01_desc: 'A vacant pre-war apartment transformed into a home buyers could feel before they finished the walkthrough. Sold in 4 days, 18% above asking.',
+    transform_01_notes: 'Designer notes: We stripped the apartment of its visual clutter and rebuilt it around the quality of light. Warm neutrals, low-slung furniture that echoes the pre-war proportions, and a single oversized art piece that gives buyers something to aspire to.',
+    transform_02_label: 'Transformation 02',
+    transform_02_title: 'Primary Suite · Tribeca',
+    transform_02_desc: 'A dim, characterless bedroom transformed into the most desirable room in the home. Sold the development within 30 days.',
+    transform_stat1_num: '73%',
+    transform_stat1_label: 'Days on Market Reduced',
+    transform_stat2_num: '3.8x',
+    transform_stat2_label: 'Buyer Engagement',
+    transform_stat3_num: '850+',
+    transform_stat3_label: 'Properties Transformed',
+    transform_stat4_num: '100%',
+    transform_stat4_label: 'Client Satisfaction',
+    process_journey_eyebrow: 'The Process',
+    process_journey_headline: 'The Journey of a Transformation',
+    process_j1_title: 'Assessment',
+    process_j1_desc: 'Discovery & property evaluation',
+    process_j2_title: 'Design',
+    process_j2_desc: 'Concept & curation strategy',
+    process_j3_title: 'Curation',
+    process_j3_desc: 'Furniture & art selection',
+    process_j4_title: 'Installation',
+    process_j4_desc: 'Professional styling & setup',
+    process_j5_title: 'Reveal',
+    process_j5_desc: 'Photography & market launch',
+
+    /* ─── SERVICES PAGE ───────────────────────────────────── */
+    services_eyebrow: 'The Collection',
+    services_headline: 'Every Service, Exceptionally Delivered',
+    svc1_label: '01 / Flagship Service',
+    svc1_title: 'Luxury Home Staging',
+    svc1_desc: 'Full-service staging for extraordinary properties. We transform vacant and occupied spaces with curated furnishings, fine art, and objects of intention — creating the emotional experience that compels buyers to act decisively.',
+    svc1_b1: 'Complete property consultation',
+    svc1_b2: 'Furniture & art curation from our exclusive inventory',
+    svc1_b3: 'Professional installation & styling',
+    svc1_b4: 'Photography coordination',
+    svc2_label: '02 / Refinement',
+    svc2_title: 'Interior Styling',
+    svc2_desc: 'The most nuanced of our services — working with what you already have, refining, editing, and adding precisely chosen pieces that transform familiar rooms into extraordinary ones.',
+    svc2_b1: 'In-home styling consultation',
+    svc2_b2: 'Strategic furniture repositioning',
+    svc2_b3: 'Curated accent and accessory placement',
+    svc2_b4: 'Pre-photography finishing',
+    svc3_label: '03 / Development',
+    svc3_title: 'Model Homes & Builder Services',
+    svc3_desc: 'Selling a development begins long before the first homeowner moves in. We create model home environments that sell a lifestyle, a community, and a future — helping builders achieve faster sell-outs at premium prices.',
+    svc3_b1: 'Complete model unit furnishing',
+    svc3_b2: 'Community lifestyle storytelling',
+    svc3_b3: 'Multiple unit coordination',
+    svc3_b4: 'Move-in-ready finishes',
+    svc4_label: '04 / Escapes',
+    svc4_title: 'Vacation Properties',
+    svc4_desc: 'From Hamptons estates to Connecticut retreats, vacation property staging commands premium booking rates and inspires the kind of loyalty that brings guests back year after year.',
+    svc4_b1: 'Seasonal staging programs',
+    svc4_b2: 'Short-term rental optimization',
+    svc4_b3: 'Photography-first approach',
+    svc4_b4: 'Turnkey setup and removal',
+    svc5_label: '05 / Commercial',
+    svc5_title: 'Commercial Interiors',
+    svc5_desc: 'Boutique offices, hospitality spaces, and co-working environments that inspire the people who inhabit them. Beautiful environments attract better clients and better talent.',
+    svc5_b1: 'Office & showroom staging',
+    svc5_b2: 'Hospitality environments',
+    svc5_b3: 'Co-working space design',
+    svc5_b4: 'Brand-aligned aesthetics',
+    svc6_label: '06 / Digital',
+    svc6_title: 'Virtual Staging',
+    svc6_desc: 'For pre-construction developments, new listings that need immediate online impact, or properties that benefit from showing furnished before furnishing. Photorealistic renders that sell before a single piece of furniture arrives.',
+    svc6_b1: 'Photorealistic CGI renders',
+    svc6_b2: 'Multiple style options',
+    svc6_b3: 'Same-week delivery',
+    svc6_b4: 'MLS & marketing-ready files',
+    svc7_label: '07 / Discovery',
+    svc7_title: 'Luxury Consultations',
+    svc7_desc: 'Every project begins with a conversation. Our complimentary 30-minute discovery session is where we learn your home, your goals, and your timeline — and where we begin to see the possibilities.',
+    svc7_b1: 'Complimentary 30-min call',
+    svc7_b2: 'Property walkthrough',
+    svc7_b3: 'Tailored proposal',
+    svc7_b4: 'No commitment required',
+    svc_faq_eyebrow: 'Common Questions',
+    svc_faq_headline: 'Everything You Need to Know',
+    services_cta_eyebrow: 'Begin Your Project',
+    services_cta_headline: 'Every Extraordinary Home Begins with a Conversation.',
+    services_cta_desc: 'Tell us about your property. We will take care of everything else.',
+
+    /* ─── ABOUT PAGE ──────────────────────────────────────── */
+    about_eyebrow: 'Our Story',
+    about_headline: 'Design is Not Decoration. It is Emotion.',
+    founders_eyebrow: 'The Founders',
+    founders_headline: 'Julia & Alfredo',
+    founders_p1: 'JCL Staging was born from a simple conviction: the way a home feels is more powerful than how it looks.',
+    founders_p2: "Julia Carias-Linares, Creative Director, brings a painter's eye to every project. Alfredo Linares, Lead Executor, ensures vision becomes flawless reality. Together since 2017, they have transformed over 850 properties across the Tri-State area.",
+    julia_title: 'CEO & Creative Director',
+    julia_quote: 'Design is how we speak to people before they know us.',
+    alfredo_title: 'COO & Lead Executor',
+    alfredo_quote: 'Excellence is in the execution.',
+    about_quote: '"We believe every home holds an extraordinary story — and that the right staging reveals it completely."',
+    about_quote_attr: '— Julia Carias-Linares, Creative Director',
+    pillar1_title: 'Emotion First',
+    pillar1_desc: 'We design for feeling before function — because buyers decide with their hearts, not spreadsheets.',
+    pillar2_title: 'Meticulous Craft',
+    pillar2_desc: 'No detail is beneath our attention. The angle of a lamp, the weight of a throw — everything matters.',
+    pillar3_title: 'Genuine Partnership',
+    pillar3_desc: 'We build relationships, not transactions. Many of our clients return again and again.',
+    timeline_eyebrow: 'Our Journey',
+    timeline_headline: 'A Decade of Transformation',
+    recognition_eyebrow: 'Recognition',
+    recognition_headline: 'As Seen In',
+    about_cta_eyebrow: 'Work With Us',
+    about_cta_headline: "Let Us Tell Your Home's Story.",
+    about_cta_desc: 'Every extraordinary sale begins with a single conversation.',
+
+    /* ─── JOURNAL PAGE ────────────────────────────────────── */
+    journal_page_eyebrow: 'Editorial Journal',
+    journal_page_headline: 'Stories Worth Reading',
+    filter_all_articles: 'All Articles',
+    filter_design: 'Interior Design',
+    filter_living: 'Luxury Living',
+    filter_selling: 'Home Selling',
+    filter_architecture: 'Architecture',
+    filter_trends: 'Design Trends',
+    filter_behind: 'Behind the Projects',
+    newsletter_eyebrow: 'Stay Connected',
+    newsletter_headline: 'Design in Your Inbox',
+    newsletter_desc: 'Architectural insights, staging stories, and luxury market intelligence — curated monthly, never overwhelming.',
+    newsletter_placeholder: 'Your email address',
+
+    /* ─── CONCIERGE PAGE ──────────────────────────────────── */
+    concierge_eyebrow: 'AI Design Concierge',
+    concierge_headline: 'Meet Olivia.',
+    concierge_sub: 'Your personal luxury design concierge — available always, knowledgeable always, never ordinary.',
+    concierge_cta1: 'Start a Conversation',
+    concierge_cta2: 'Book with a Human',
+    olivia_how_eyebrow: 'How Olivia Helps',
+    olivia_how_headline: '3 Ways Olivia Elevates Your Experience',
+    olivia_cap1_title: 'Property Evaluation',
+    olivia_cap1_desc: 'Describe your home and Olivia will suggest a tailored staging approach — instantly, intelligently, beautifully.',
+    olivia_cap2_title: 'Consultation Scheduling',
+    olivia_cap2_desc: 'Olivia checks availability and books your team consultation in seconds.',
+    olivia_cap3_title: 'Expert Guidance',
+    olivia_cap3_desc: 'Ask anything about staging, interior design, or the luxury market. Olivia knows JCL inside and out.',
+    conversation_eyebrow: 'A Conversation',
+    conversation_headline: 'See How It Feels',
+    chat_eyebrow: 'Chat Now',
+    chat_headline: 'Chat with Olivia',
+    olivia_faq_headline: 'About Olivia',
+    concierge_prefer_human: 'Prefer a human? Our team is always here.',
+    concierge_or_email: 'Or email us at',
+
+    /* ─── CONSULTATION PAGE ───────────────────────────────── */
+    consult_eyebrow: 'Begin Your Journey',
+    consult_headline: 'Tell Us About Your Home.',
+    consult_sub: 'We will review your details and reach out within 24 hours to discuss your project.',
+    step_of: 'of',
+    step_label: 'Step',
+    step1_question: 'What type of property are you staging?',
+    step1_opt1_title: 'Single Family Home',
+    step1_opt1_desc: 'Your home, reimagined for its next chapter',
+    step1_opt2_title: 'Condominium',
+    step1_opt2_desc: 'Urban elegance, curated precisely',
+    step1_opt3_title: 'Townhouse',
+    step1_opt3_desc: 'Three levels of intentional living',
+    step1_opt4_title: 'Luxury Estate',
+    step1_opt4_desc: 'For properties that deserve the extraordinary',
+    step1_opt5_title: 'Vacation Property',
+    step1_opt5_desc: 'A retreat worth returning to',
+    step1_opt6_title: 'Commercial Space',
+    step1_opt6_desc: 'Environments that inspire',
+    step2_question: 'How would you describe your property?',
+    step2_opt1_title: 'Vacant (Empty)',
+    step2_opt1_desc: 'Unfurnished, ready for staging',
+    step2_opt2_title: 'Occupied (Furnished)',
+    step2_opt2_desc: 'Currently lived in',
+    step2_opt3_title: 'New Construction',
+    step2_opt3_desc: 'Freshly built',
+    step2_opt4_title: 'Partially Furnished',
+    step2_opt4_desc: 'Some pieces in place',
+    step3_question: 'What is your timeline?',
+    step3_opt1_title: 'Within 2 Weeks',
+    step3_opt1_desc: 'Urgent listing',
+    step3_opt2_title: '2–4 Weeks',
+    step3_opt2_desc: 'Standard timeline',
+    step3_opt3_title: '1–3 Months',
+    step3_opt3_desc: 'Comfortable planning',
+    step3_opt4_title: 'Planning Ahead',
+    step3_opt4_desc: 'Future listing',
+    step4_question: 'What are your primary goals?',
+    step4_opt1_title: 'Maximize Sale Price',
+    step4_opt1_desc: 'Achieve the highest possible return',
+    step4_opt2_title: 'Sell Quickly',
+    step4_opt2_desc: 'Minimize days on market',
+    step4_opt3_title: 'Attract the Right Buyer',
+    step4_opt3_desc: 'Target a specific buyer profile',
+    step4_opt4_title: 'All of the Above',
+    step4_opt4_desc: 'The complete JCL experience',
+    step5_question: 'How can we reach you?',
+    step5_name_placeholder: 'Your full name',
+    step5_email_placeholder: 'Email address',
+    step5_phone_placeholder: 'Phone number (optional)',
+    step5_address_placeholder: 'Property address',
+    step6_headline: 'Thank You for Reaching Out.',
+    step6_desc: 'A member of our team will contact you within 24 hours to begin crafting your staging experience.',
+    step6_sub: 'In the meantime, explore our portfolio for inspiration.',
+    consult_testimonial: '"JCL did not just stage my apartment. They gave it a soul."',
+    consult_testimonial_attr: '— Alexandra Chen, Upper West Side',
+    consult_stat1_num: '97%',
+    consult_stat1_label: 'Sell at or above asking',
+    consult_stat2_num: '8 days',
+    consult_stat2_label: 'Average days on market',
+    consult_stat3_num: '850+',
+    consult_stat3_label: 'Properties transformed',
+    consult_olivia_prompt: 'Have questions? Chat with Olivia, our AI Design Concierge.',
+
+    /* ─── CONTACT PAGE ────────────────────────────────────── */
+    contact_eyebrow: 'Get in Touch',
+    contact_headline: 'Begin the Conversation',
+    contact_reach_eyebrow: 'Reach Us',
+    contact_reach_headline: 'We Would Love to Hear From You',
+    contact_reach_desc: 'Whether you are preparing a property for sale, working on a development, or simply exploring what is possible — we are here.',
+    contact_email_label: 'Email',
+    contact_instagram_label: 'Instagram',
+    contact_hours_label: 'Hours',
+    contact_hours_value: 'Monday – Saturday, 9am – 7pm EST',
+    contact_area_label: 'Service Area',
+    contact_area_value: 'New York City · New Jersey · Connecticut',
+    contact_olivia_prompt: 'For immediate assistance, Olivia — our AI Design Concierge — is available 24/7.',
+    contact_name_placeholder: 'Your full name',
+    contact_email_placeholder: 'Email address',
+    contact_phone_placeholder: 'Phone (optional)',
+    contact_role_default: 'I am a... (select one)',
+    contact_role_1: 'Homeowner',
+    contact_role_2: 'Realtor or Agent',
+    contact_role_3: 'Builder or Developer',
+    contact_role_4: 'Architect or Designer',
+    contact_role_5: 'Other',
+    contact_message_placeholder: 'Tell us about your project…',
+    contact_submit: 'Send Message',
+    contact_response_time: 'We respond to all inquiries within 24 hours.',
+    where_we_work_eyebrow: 'Where We Work',
+    where_we_work_headline: 'The Tri-State Area and Beyond',
+    where_we_work_desc: 'From Manhattan penthouses to Connecticut estates, our team brings the same level of intention and craft to every property, regardless of geography.',
+
+    /* ─── FAQ PAGE ────────────────────────────────────────── */
+    faq_eyebrow: 'FAQ',
+    faq_headline: 'Every Question, Answered Beautifully',
+    faq_group1_eyebrow: 'Selling Your Home',
+    faq_group1_headline: 'The Impact of Staging',
+    faq_group2_eyebrow: 'Our Services',
+    faq_group2_headline: 'What We Offer',
+    faq_group3_eyebrow: 'Working With JCL',
+    faq_group3_headline: 'Getting Started',
+    faq_group4_eyebrow: 'Investment & Pricing',
+    faq_group4_headline: 'Understanding the Cost',
+
+    /* ─── OLIVIA WIDGET ───────────────────────────────────── */
+    olivia_name: 'Olivia',
+    olivia_status: 'Design Concierge · Online',
+    olivia_welcome: 'Welcome to JCL Staging. I am Olivia, your Design Concierge. How can I help you today?',
+    olivia_label: 'Chat with Olivia',
+    olivia_input_placeholder: 'Message Olivia…',
+    olivia_sugg1: 'I want to stage my home',
+    olivia_sugg2: 'Tell me about your services',
+    olivia_sugg3: 'Book a consultation',
+    olivia_lang_switch: 'I have switched to English. How can I assist you?',
+
+    /* ─── 404 PAGE ────────────────────────────────────────── */
+    not_found_num: '404',
+    not_found_title: 'Looks like this room is still being designed.',
+    not_found_desc: 'The page you are looking for does not exist — but something extraordinary does. Let us help you find it.',
+    not_found_cta1: 'Return Home',
+    not_found_cta2: 'View Portfolio',
+  },
+
+  es: {
+    /* ─── META ───────────────────────────────────────────── */
+    meta_home_title: 'JCL Staging & Design | El Estudio de Staging de Lujo Premier de Nueva York',
+    meta_home_desc: 'Staging de interiores y diseño de interiores de lujo en Nueva York. JCL Staging & Design transforma propiedades en hogares extraordinarios que se venden más rápido y por encima del precio pedido.',
+    meta_portfolio_title: 'Portafolio | JCL Staging & Design',
+    meta_portfolio_desc: 'Explore nuestro portafolio de proyectos de staging de lujo en Nueva York, Nueva Jersey y Connecticut.',
+    meta_services_title: 'Servicios | JCL Staging & Design',
+    meta_services_desc: 'Desde staging de propiedades vacías hasta hogares modelo y staging virtual — cada servicio, entregado con excelencia.',
+    meta_about_title: 'Nosotros | JCL Staging & Design',
+    meta_about_desc: 'Fundado por Julia Carias-Linares y Alfredo Linares en 2017. Más de 850 propiedades transformadas en el área Tri-State.',
+    meta_contact_title: 'Contacto | JCL Staging & Design',
+    meta_contact_desc: 'Comuníquese con JCL Staging & Design. Servimos a Nueva York, Nueva Jersey y Connecticut.',
+    meta_faq_title: 'Preguntas Frecuentes | JCL Staging & Design',
+    meta_faq_desc: 'Cada pregunta sobre el staging de lujo, respondida con elegancia.',
+    meta_concierge_title: 'Conozca a Olivia — Concierge de Diseño IA | JCL Staging & Design',
+    meta_concierge_desc: 'Converse con Olivia, su concierge de diseño de lujo con IA, disponible las 24 horas.',
+    meta_consultation_title: 'Reservar Consulta | JCL Staging & Design',
+    meta_consultation_desc: 'Comience su experiencia con JCL. Cuéntenos sobre su propiedad y crearemos algo extraordinario.',
+    meta_journal_title: 'Revista Editorial | JCL Staging & Design',
+    meta_journal_desc: 'Perspectivas arquitectónicas, historias de staging e inteligencia del mercado de lujo del equipo JCL.',
+    meta_transformations_title: 'Transformaciones | JCL Staging & Design',
+    meta_transformations_desc: 'Antes y después: vea cómo JCL Staging convierte espacios ordinarios en hogares extraordinarios.',
+    meta_404_title: 'Página No Encontrada | JCL Staging & Design',
+
+    /* ─── NAVIGATION ──────────────────────────────────────── */
+    nav_portfolio: 'Portafolio',
+    nav_transformations: 'Transformaciones',
+    nav_services: 'Servicios',
+    nav_journal: 'Revista',
+    nav_about: 'Nosotros',
+    nav_concierge: 'Concierge IA',
+    nav_book: 'Reservar Consulta',
+    nav_book_now: 'Reservar',
+    lang_en: 'EN',
+    lang_es: 'ES',
+    lang_en_full: 'English',
+    lang_es_full: 'Español',
+
+    /* ─── FOOTER ──────────────────────────────────────────── */
+    footer_tagline: 'El lujo comienza con las primeras impresiones.',
+    footer_explore: 'Explorar',
+    footer_contact: 'Contacto',
+    footer_newsletter_heading: 'Manténgase Inspirado',
+    footer_newsletter_desc: 'Historias de diseño, perspectivas de staging e inteligencia del mercado — curadas con intención.',
+    footer_newsletter_placeholder: 'Su dirección de correo',
+    footer_newsletter_btn: 'Suscribirse',
+    footer_copyright: '© 2026 JCL Staging & Design. Todos los derechos reservados.',
+    footer_privacy: 'Política de Privacidad',
+    footer_terms: 'Términos de Servicio',
+    footer_get_in_touch: 'Contáctenos',
+    footer_faq: 'Preguntas Frecuentes',
+
+    /* ─── COMMON BUTTONS & LABELS ─────────────────────────── */
+    btn_book_consultation: 'Reservar una Consulta',
+    btn_explore_portfolio: 'Ver Nuestro Portafolio',
+    btn_view_services: 'Ver Nuestros Servicios',
+    btn_learn_more: 'Conocer Más',
+    btn_read_article: 'Leer Artículo',
+    btn_subscribe: 'Suscribirse',
+    btn_send_message: 'Enviar Mensaje',
+    btn_continue: 'Continuar →',
+    btn_back: 'Atrás',
+    btn_book_your_consultation: 'Reservar Su Consulta',
+    btn_explore_portfolio_short: 'Ver Portafolio',
+    btn_return_home: 'Volver al Inicio',
+    btn_start_conversation: 'Iniciar una Conversación',
+    btn_book_with_human: 'Hablar con una Persona',
+    label_before: 'Antes',
+    label_after: 'Después',
+    label_min_read: 'min de lectura',
+
+    /* ─── PRELOADER ───────────────────────────────────────── */
+    preloader_tagline: 'El lujo comienza con las primeras impresiones.',
+    preloader_sub: 'Staging & Diseño',
+
+    /* ─── HOMEPAGE ────────────────────────────────────────── */
+    hero_eyebrow: 'El Estudio de Staging Premier de Nueva York',
+    hero_headline_1: 'Donde los Hogares',
+    hero_headline_2: 'Se Convierten en',
+    hero_headline_3: 'Inolvidables.',
+    hero_sub: 'No simplemente preparamos hogares — orquestamos la experiencia emocional que hace que los compradores se enamoren antes de terminar de recorrer la primera habitación.',
+    hero_cta_primary: 'Ver Nuestro Portafolio',
+    hero_cta_secondary: 'Reservar una Consulta',
+    hero_watch: 'Ver Nuestra Historia',
+    hero_scroll: 'Desplazar',
+
+    stat_sell_above: 'Venden al precio pedido o por encima',
+    stat_faster: 'Más rápido en el mercado',
+    stat_properties: 'Propiedades transformadas',
+
+    brand_eyebrow: 'Sobre JCL',
+    brand_headline_1: 'El diseño no es decoración.',
+    brand_headline_2: 'Es el lenguaje',
+    brand_headline_3: 'de las primeras impresiones.',
+    brand_text: 'Desde 2017, JCL Staging & Design ha transformado más de 850 propiedades en el área Tri-State de Nueva York. Nuestro trabajo existe en la intersección de la visión arquitectónica, el arte interior y la inteligencia emocional.',
+    brand_text2: 'No preparamos hogares para impresionar. Los preparamos para ser sentidos.',
+    brand_cta: 'Nuestra Historia',
+
+    collection_eyebrow: 'Lo Que Hacemos',
+    collection_headline: 'Una Suite Extraordinaria de Servicios',
+    service_staging_title: 'Staging de Lujo',
+    service_staging_desc: 'Staging de servicio completo que transforma su propiedad en un hogar emocionalmente cautivador y listo para el mercado.',
+    service_styling_title: 'Estilismo de Interiores',
+    service_styling_desc: 'El arte de elevar espacios habitados — curando, editando y añadiendo piezas seleccionadas con precisión.',
+    service_model_title: 'Hogares Modelo',
+    service_model_desc: 'Vender comunidades y estilos de vida antes de que un desarrollo esté completo.',
+    service_vacation_title: 'Propiedades Vacacionales',
+    service_vacation_desc: 'Staging premium que exige tarifas de alquiler más altas y lealtad duradera de los huéspedes.',
+    service_virtual_title: 'Staging Virtual',
+    service_virtual_desc: 'Renderizados fotorrealistas que crean deseo antes de la primera visita.',
+    service_commercial_title: 'Interiores Comerciales',
+    service_commercial_desc: 'Ambientes que atraen a los clientes correctos e inspiran a quienes los habitan.',
+    collection_cta: 'Explorar Todos los Servicios',
+
+    transform_eyebrow: 'El Trabajo',
+    transform_headline: 'Antes & Después',
+    transform_sub: 'Cada transformación es el resultado de intención, artesanía y una comprensión íntima de lo que mueve a los compradores.',
+    transform_cta: 'Ver Todas las Transformaciones',
+
+    estates_eyebrow: 'Propiedades Seleccionadas',
+    estates_headline: 'Propiedades Que Definieron un Estándar',
+    estates_cta: 'Ver Portafolio Completo',
+
+    process_eyebrow: 'Cómo Trabajamos',
+    process_headline: 'El Proceso JCL',
+    process_sub: 'Desde la primera conversación hasta la fotografía final, cada paso es intencional.',
+    process_step1_num: '01',
+    process_step1_title: 'Descubrimiento',
+    process_step1_desc: 'Conocemos su propiedad, sus objetivos y su cronograma.',
+    process_step2_num: '02',
+    process_step2_title: 'Concepto',
+    process_step2_desc: 'Desarrollamos una visión de staging adaptada a su comprador específico.',
+    process_step3_num: '03',
+    process_step3_title: 'Curaduría',
+    process_step3_desc: 'Seleccionamos mobiliario, arte y objetos de nuestro inventario exclusivo.',
+    process_step4_num: '04',
+    process_step4_title: 'Instalación',
+    process_step4_desc: 'Nuestro equipo transforma su propiedad en un solo día impecable.',
+    process_step5_num: '05',
+    process_step5_title: 'Revelación',
+    process_step5_desc: 'Lista para fotografía. Lista para el mercado. Extraordinaria.',
+
+    stories_eyebrow: 'Voces de Clientes',
+    stories_headline: 'Palabras Que Lo Dicen Todo',
+
+    journal_eyebrow: 'Revista Editorial',
+    journal_headline: 'Diseño. Estrategia. Transformación.',
+    journal_sub: 'Historias, perspectivas e ideas del mundo del bienes raíces de lujo.',
+    journal_cta: 'Leer Todos los Artículos',
+
+    cta_home_eyebrow: 'Comience Su Viaje',
+    cta_home_headline: 'Su Hogar Merece Ser Inolvidable.',
+    cta_home_desc: 'Permítanos mostrarle cómo se ve lo extraordinario.',
+    cta_primary: 'Reservar una Consulta',
+    cta_secondary: 'Ver Nuestro Trabajo',
+
+    /* ─── PORTFOLIO PAGE ──────────────────────────────────── */
+    portfolio_eyebrow: 'Nuestro Trabajo',
+    portfolio_headline: 'Un Portafolio de Hogares Extraordinarios',
+    filter_all: 'Todo el Trabajo',
+    filter_luxury: 'Hogares de Lujo',
+    filter_condo: 'Condominios',
+    filter_model: 'Hogares Modelo',
+    filter_occupied: 'Staging Habitado',
+    filter_commercial: 'Comercial',
+    portfolio_cta_eyebrow: 'Comience Su Proyecto',
+    portfolio_cta_headline: '¿Listo para Transformar Su Propiedad?',
+    portfolio_cta_desc: 'Todo hogar extraordinario comienza con una conversación.',
+
+    /* ─── TRANSFORMATIONS PAGE ────────────────────────────── */
+    transform_page_eyebrow: 'Antes & Después',
+    transform_page_headline: 'El Arte de la Transformación',
+    transform_philosophy_eyebrow: 'La Filosofía',
+    transform_philosophy_headline: 'Cada Espacio Guarda una Historia Oculta.',
+    transform_philosophy_desc: 'La diferencia entre una casa que permanece en el mercado y una que genera guerras de ofertas no siempre es estructural. Es emocional. Es la sensación que invade a un comprador en el momento en que entra. Nuestras transformaciones están diseñadas para crear esa sensación — de manera deliberada, precisa y hermosa.',
+    transform_01_label: 'Transformación 01',
+    transform_01_title: 'Sala de Estar · Upper East Side',
+    transform_01_desc: 'Un apartamento de preguerra vacío transformado en un hogar que los compradores podían sentir antes de terminar el recorrido. Vendido en 4 días, 18% por encima del precio pedido.',
+    transform_01_notes: 'Notas del diseñador: Despojamos el apartamento de su desorden visual y lo reconstruimos en torno a la calidad de la luz. Neutros cálidos, mobiliario bajo que evoca las proporciones de preguerra, y una sola obra de arte de gran tamaño que da a los compradores algo a qué aspirar.',
+    transform_02_label: 'Transformación 02',
+    transform_02_title: 'Suite Principal · Tribeca',
+    transform_02_desc: 'Un dormitorio oscuro y sin carácter transformado en la habitación más deseable del hogar. El desarrollo se vendió en 30 días.',
+    transform_stat1_num: '73%',
+    transform_stat1_label: 'Días en el Mercado Reducidos',
+    transform_stat2_num: '3.8x',
+    transform_stat2_label: 'Participación del Comprador',
+    transform_stat3_num: '850+',
+    transform_stat3_label: 'Propiedades Transformadas',
+    transform_stat4_num: '100%',
+    transform_stat4_label: 'Satisfacción del Cliente',
+    process_journey_eyebrow: 'El Proceso',
+    process_journey_headline: 'El Viaje de una Transformación',
+    process_j1_title: 'Evaluación',
+    process_j1_desc: 'Descubrimiento y evaluación de la propiedad',
+    process_j2_title: 'Diseño',
+    process_j2_desc: 'Concepto y estrategia de curaduría',
+    process_j3_title: 'Curaduría',
+    process_j3_desc: 'Selección de mobiliario y arte',
+    process_j4_title: 'Instalación',
+    process_j4_desc: 'Estilismo y configuración profesional',
+    process_j5_title: 'Revelación',
+    process_j5_desc: 'Fotografía y lanzamiento al mercado',
+
+    /* ─── SERVICES PAGE ───────────────────────────────────── */
+    services_eyebrow: 'La Colección',
+    services_headline: 'Cada Servicio, Entregado con Excelencia',
+    svc1_label: '01 / Servicio Principal',
+    svc1_title: 'Staging de Lujo',
+    svc1_desc: 'Staging de servicio completo para propiedades extraordinarias. Transformamos espacios vacíos y habitados con mobiliario curado, bellas artes y objetos de intención — creando la experiencia emocional que lleva a los compradores a actuar con decisión.',
+    svc1_b1: 'Consulta completa de la propiedad',
+    svc1_b2: 'Selección de mobiliario y arte de nuestro inventario exclusivo',
+    svc1_b3: 'Instalación y estilismo profesional',
+    svc1_b4: 'Coordinación de fotografía',
+    svc2_label: '02 / Refinamiento',
+    svc2_title: 'Estilismo de Interiores',
+    svc2_desc: 'El más matizado de nuestros servicios — trabajar con lo que ya tiene, refinando, editando y añadiendo piezas elegidas con precisión que transforman habitaciones familiares en extraordinarias.',
+    svc2_b1: 'Consulta de estilismo en el hogar',
+    svc2_b2: 'Reposicionamiento estratégico del mobiliario',
+    svc2_b3: 'Colocación de accesorios y acentos curados',
+    svc2_b4: 'Terminación pre-fotografía',
+    svc3_label: '03 / Desarrollo',
+    svc3_title: 'Hogares Modelo y Servicios para Constructores',
+    svc3_desc: 'Vender un desarrollo comienza mucho antes de que el primer propietario se mude. Creamos ambientes de hogar modelo que venden un estilo de vida, una comunidad y un futuro — ayudando a los constructores a lograr ventas más rápidas a precios premium.',
+    svc3_b1: 'Amueblado completo de unidades modelo',
+    svc3_b2: 'Narración del estilo de vida de la comunidad',
+    svc3_b3: 'Coordinación de múltiples unidades',
+    svc3_b4: 'Acabados listos para mudarse',
+    svc4_label: '04 / Escapadas',
+    svc4_title: 'Propiedades Vacacionales',
+    svc4_desc: 'Desde fincas en los Hamptons hasta retiros en Connecticut, el staging de propiedades vacacionales exige tarifas de reserva premium e inspira el tipo de lealtad que hace que los huéspedes regresen año tras año.',
+    svc4_b1: 'Programas de staging por temporada',
+    svc4_b2: 'Optimización de alquiler a corto plazo',
+    svc4_b3: 'Enfoque centrado en la fotografía',
+    svc4_b4: 'Configuración y retiro completo',
+    svc5_label: '05 / Comercial',
+    svc5_title: 'Interiores Comerciales',
+    svc5_desc: 'Oficinas boutique, espacios de hospitalidad y entornos de coworking que inspiran a quienes los habitan. Los ambientes hermosos atraen mejores clientes y mejor talento.',
+    svc5_b1: 'Staging de oficinas y salas de exhibición',
+    svc5_b2: 'Ambientes de hospitalidad',
+    svc5_b3: 'Diseño de espacios de coworking',
+    svc5_b4: 'Estética alineada con la marca',
+    svc6_label: '06 / Digital',
+    svc6_title: 'Staging Virtual',
+    svc6_desc: 'Para desarrollos en preventa, nuevas propiedades que necesitan impacto online inmediato o propiedades que se benefician de mostrarse amuebladas antes de amueblarse. Renderizados fotorrealistas que venden antes de que llegue un solo mueble.',
+    svc6_b1: 'Renderizados CGI fotorrealistas',
+    svc6_b2: 'Múltiples opciones de estilo',
+    svc6_b3: 'Entrega en la misma semana',
+    svc6_b4: 'Archivos listos para MLS y marketing',
+    svc7_label: '07 / Descubrimiento',
+    svc7_title: 'Consultas de Lujo',
+    svc7_desc: 'Todo proyecto comienza con una conversación. Nuestra sesión de descubrimiento gratuita de 30 minutos es donde conocemos su hogar, sus objetivos y su cronograma — y donde comenzamos a ver las posibilidades.',
+    svc7_b1: 'Llamada gratuita de 30 min',
+    svc7_b2: 'Recorrido por la propiedad',
+    svc7_b3: 'Propuesta personalizada',
+    svc7_b4: 'Sin compromiso requerido',
+    svc_faq_eyebrow: 'Preguntas Frecuentes',
+    svc_faq_headline: 'Todo lo Que Necesita Saber',
+    services_cta_eyebrow: 'Comience Su Proyecto',
+    services_cta_headline: 'Todo Hogar Extraordinario Comienza con una Conversación.',
+    services_cta_desc: 'Cuéntenos sobre su propiedad. Nosotros nos encargamos de todo lo demás.',
+
+    /* ─── ABOUT PAGE ──────────────────────────────────────── */
+    about_eyebrow: 'Nuestra Historia',
+    about_headline: 'El Diseño No es Decoración. Es Emoción.',
+    founders_eyebrow: 'Los Fundadores',
+    founders_headline: 'Julia & Alfredo',
+    founders_p1: 'JCL Staging nació de una convicción simple: la forma en que se siente un hogar es más poderosa que su apariencia.',
+    founders_p2: 'Julia Carias-Linares, Directora Creativa, aporta el ojo de una pintora a cada proyecto. Alfredo Linares, Director de Operaciones, asegura que la visión se convierta en una realidad impecable. Juntos desde 2017, han transformado más de 850 propiedades en el área Tri-State.',
+    julia_title: 'CEO & Directora Creativa',
+    julia_quote: 'El diseño es cómo hablamos con las personas antes de que nos conozcan.',
+    alfredo_title: 'COO & Director de Operaciones',
+    alfredo_quote: 'La excelencia está en la ejecución.',
+    about_quote: '"Creemos que cada hogar guarda una historia extraordinaria — y que el staging correcto la revela por completo."',
+    about_quote_attr: '— Julia Carias-Linares, Directora Creativa',
+    pillar1_title: 'La Emoción Primero',
+    pillar1_desc: 'Diseñamos para el sentimiento antes que para la función — porque los compradores deciden con el corazón, no con hojas de cálculo.',
+    pillar2_title: 'Artesanía Meticulosa',
+    pillar2_desc: 'Ningún detalle está por debajo de nuestra atención. El ángulo de una lámpara, el peso de una manta — todo importa.',
+    pillar3_title: 'Colaboración Genuina',
+    pillar3_desc: 'Construimos relaciones, no transacciones. Muchos de nuestros clientes regresan una y otra vez.',
+    timeline_eyebrow: 'Nuestro Recorrido',
+    timeline_headline: 'Una Década de Transformación',
+    recognition_eyebrow: 'Reconocimientos',
+    recognition_headline: 'Destacados En',
+    about_cta_eyebrow: 'Trabaje Con Nosotros',
+    about_cta_headline: 'Permítanos Contar la Historia de Su Hogar.',
+    about_cta_desc: 'Toda venta extraordinaria comienza con una sola conversación.',
+
+    /* ─── JOURNAL PAGE ────────────────────────────────────── */
+    journal_page_eyebrow: 'Revista Editorial',
+    journal_page_headline: 'Historias que Vale la Pena Leer',
+    filter_all_articles: 'Todos los Artículos',
+    filter_design: 'Diseño de Interiores',
+    filter_living: 'Vida de Lujo',
+    filter_selling: 'Venta de Propiedades',
+    filter_architecture: 'Arquitectura',
+    filter_trends: 'Tendencias de Diseño',
+    filter_behind: 'Detrás de los Proyectos',
+    newsletter_eyebrow: 'Manténgase Conectado',
+    newsletter_headline: 'Diseño en Su Correo',
+    newsletter_desc: 'Perspectivas arquitectónicas, historias de staging e inteligencia del mercado de lujo — curadas mensualmente, nunca abrumadoras.',
+    newsletter_placeholder: 'Su dirección de correo',
+
+    /* ─── CONCIERGE PAGE ──────────────────────────────────── */
+    concierge_eyebrow: 'Concierge de Diseño IA',
+    concierge_headline: 'Conozca a Olivia.',
+    concierge_sub: 'Su concierge de diseño de lujo personal — siempre disponible, siempre conocedora, nunca ordinaria.',
+    concierge_cta1: 'Iniciar una Conversación',
+    concierge_cta2: 'Hablar con una Persona',
+    olivia_how_eyebrow: 'Cómo Ayuda Olivia',
+    olivia_how_headline: '3 Formas en Que Olivia Eleva Su Experiencia',
+    olivia_cap1_title: 'Evaluación de Propiedades',
+    olivia_cap1_desc: 'Describa su hogar y Olivia sugerirá un enfoque de staging personalizado — al instante, con inteligencia, con elegancia.',
+    olivia_cap2_title: 'Programación de Consultas',
+    olivia_cap2_desc: 'Olivia verifica la disponibilidad y programa su consulta en segundos.',
+    olivia_cap3_title: 'Orientación Experta',
+    olivia_cap3_desc: 'Pregunte cualquier cosa sobre staging, diseño de interiores o el mercado de lujo. Olivia conoce JCL de arriba a abajo.',
+    conversation_eyebrow: 'Una Conversación',
+    conversation_headline: 'Descubra Cómo Se Siente',
+    chat_eyebrow: 'Chatear Ahora',
+    chat_headline: 'Chatear con Olivia',
+    olivia_faq_headline: 'Sobre Olivia',
+    concierge_prefer_human: '¿Prefiere hablar con una persona? Nuestro equipo siempre está disponible.',
+    concierge_or_email: 'O escríbanos a',
+
+    /* ─── CONSULTATION PAGE ───────────────────────────────── */
+    consult_eyebrow: 'Comience Su Viaje',
+    consult_headline: 'Cuéntenos Sobre Su Hogar.',
+    consult_sub: 'Revisaremos sus datos y nos comunicaremos en un plazo de 24 horas para hablar sobre su proyecto.',
+    step_of: 'de',
+    step_label: 'Paso',
+    step1_question: '¿Qué tipo de propiedad desea preparar?',
+    step1_opt1_title: 'Vivienda Unifamiliar',
+    step1_opt1_desc: 'Su hogar, reimaginado para su próximo capítulo',
+    step1_opt2_title: 'Condominio',
+    step1_opt2_desc: 'Elegancia urbana, curada con precisión',
+    step1_opt3_title: 'Townhouse',
+    step1_opt3_desc: 'Tres niveles de vida intencional',
+    step1_opt4_title: 'Finca de Lujo',
+    step1_opt4_desc: 'Para propiedades que merecen lo extraordinario',
+    step1_opt5_title: 'Propiedad Vacacional',
+    step1_opt5_desc: 'Un retiro al que siempre vale la pena volver',
+    step1_opt6_title: 'Espacio Comercial',
+    step1_opt6_desc: 'Ambientes que inspiran',
+    step2_question: '¿Cómo describiría su propiedad?',
+    step2_opt1_title: 'Vacía (Sin Muebles)',
+    step2_opt1_desc: 'Sin amoblar, lista para el staging',
+    step2_opt2_title: 'Habitada (Amoblada)',
+    step2_opt2_desc: 'Actualmente ocupada',
+    step2_opt3_title: 'Construcción Nueva',
+    step2_opt3_desc: 'Recién construida',
+    step2_opt4_title: 'Parcialmente Amoblada',
+    step2_opt4_desc: 'Con algunas piezas en su lugar',
+    step3_question: '¿Cuál es su cronograma?',
+    step3_opt1_title: 'Dentro de 2 Semanas',
+    step3_opt1_desc: 'Listado urgente',
+    step3_opt2_title: '2–4 Semanas',
+    step3_opt2_desc: 'Cronograma estándar',
+    step3_opt3_title: '1–3 Meses',
+    step3_opt3_desc: 'Planificación con tranquilidad',
+    step3_opt4_title: 'Planificando con Anticipación',
+    step3_opt4_desc: 'Listado futuro',
+    step4_question: '¿Cuáles son sus objetivos principales?',
+    step4_opt1_title: 'Maximizar el Precio de Venta',
+    step4_opt1_desc: 'Lograr el mayor retorno posible',
+    step4_opt2_title: 'Vender Rápidamente',
+    step4_opt2_desc: 'Minimizar días en el mercado',
+    step4_opt3_title: 'Atraer al Comprador Adecuado',
+    step4_opt3_desc: 'Apuntar a un perfil de comprador específico',
+    step4_opt4_title: 'Todo lo Anterior',
+    step4_opt4_desc: 'La experiencia completa de JCL',
+    step5_question: '¿Cómo podemos contactarle?',
+    step5_name_placeholder: 'Su nombre completo',
+    step5_email_placeholder: 'Correo electrónico',
+    step5_phone_placeholder: 'Número de teléfono (opcional)',
+    step5_address_placeholder: 'Dirección de la propiedad',
+    step6_headline: 'Gracias por Comunicarse con Nosotros.',
+    step6_desc: 'Un miembro de nuestro equipo se pondrá en contacto con usted en un plazo de 24 horas para comenzar a diseñar su experiencia de staging.',
+    step6_sub: 'Mientras tanto, explore nuestro portafolio para inspirarse.',
+    consult_testimonial: '"JCL no solo preparó mi apartamento. Le dio un alma."',
+    consult_testimonial_attr: '— Alexandra Chen, Upper West Side',
+    consult_stat1_num: '97%',
+    consult_stat1_label: 'Venden al precio pedido o por encima',
+    consult_stat2_num: '8 días',
+    consult_stat2_label: 'Promedio de días en el mercado',
+    consult_stat3_num: '850+',
+    consult_stat3_label: 'Propiedades transformadas',
+    consult_olivia_prompt: '¿Tiene preguntas? Converse con Olivia, nuestra Concierge de Diseño IA.',
+
+    /* ─── CONTACT PAGE ────────────────────────────────────── */
+    contact_eyebrow: 'Contáctenos',
+    contact_headline: 'Comience la Conversación',
+    contact_reach_eyebrow: 'Encuéntrenos',
+    contact_reach_headline: 'Nos Encantaría Saber de Usted',
+    contact_reach_desc: 'Ya sea que esté preparando una propiedad para la venta, trabajando en un desarrollo, o simplemente explorando las posibilidades — estamos aquí.',
+    contact_email_label: 'Correo Electrónico',
+    contact_instagram_label: 'Instagram',
+    contact_hours_label: 'Horario',
+    contact_hours_value: 'Lunes – Sábado, 9am – 7pm EST',
+    contact_area_label: 'Área de Servicio',
+    contact_area_value: 'Nueva York · Nueva Jersey · Connecticut',
+    contact_olivia_prompt: 'Para asistencia inmediata, Olivia — nuestra Concierge de Diseño IA — está disponible las 24 horas.',
+    contact_name_placeholder: 'Su nombre completo',
+    contact_email_placeholder: 'Correo electrónico',
+    contact_phone_placeholder: 'Teléfono (opcional)',
+    contact_role_default: 'Soy... (seleccione una opción)',
+    contact_role_1: 'Propietario de vivienda',
+    contact_role_2: 'Agente inmobiliario',
+    contact_role_3: 'Constructor o promotor',
+    contact_role_4: 'Arquitecto o diseñador',
+    contact_role_5: 'Otro',
+    contact_message_placeholder: 'Cuéntenos sobre su proyecto…',
+    contact_submit: 'Enviar Mensaje',
+    contact_response_time: 'Respondemos a todas las consultas en un plazo de 24 horas.',
+    where_we_work_eyebrow: 'Dónde Trabajamos',
+    where_we_work_headline: 'El Área Tri-State y Más Allá',
+    where_we_work_desc: 'Desde los penthouses de Manhattan hasta las fincas de Connecticut, nuestro equipo aporta el mismo nivel de intención y artesanía a cada propiedad, sin importar la geografía.',
+
+    /* ─── FAQ PAGE ────────────────────────────────────────── */
+    faq_eyebrow: 'Preguntas Frecuentes',
+    faq_headline: 'Cada Pregunta, Respondida con Elegancia',
+    faq_group1_eyebrow: 'Venta de Su Hogar',
+    faq_group1_headline: 'El Impacto del Staging',
+    faq_group2_eyebrow: 'Nuestros Servicios',
+    faq_group2_headline: 'Lo Que Ofrecemos',
+    faq_group3_eyebrow: 'Trabajar con JCL',
+    faq_group3_headline: 'Cómo Comenzar',
+    faq_group4_eyebrow: 'Inversión y Precios',
+    faq_group4_headline: 'Entendiendo el Costo',
+
+    /* ─── OLIVIA WIDGET ───────────────────────────────────── */
+    olivia_name: 'Olivia',
+    olivia_status: 'Concierge de Diseño · En Línea',
+    olivia_welcome: 'Bienvenido a JCL Staging. Soy Olivia, su Concierge de Diseño. ¿En qué puedo ayudarle hoy?',
+    olivia_label: 'Chatear con Olivia',
+    olivia_input_placeholder: 'Mensaje para Olivia…',
+    olivia_sugg1: 'Quiero preparar mi hogar para la venta',
+    olivia_sugg2: 'Cuénteme sobre sus servicios',
+    olivia_sugg3: 'Reservar una consulta',
+    olivia_lang_switch: 'He cambiado al español. ¿En qué puedo asistirle?',
+
+    /* ─── 404 PAGE ────────────────────────────────────────── */
+    not_found_num: '404',
+    not_found_title: 'Parece que esta habitación aún se está diseñando.',
+    not_found_desc: 'La página que busca no existe — pero algo extraordinario sí. Permítanos ayudarle a encontrarlo.',
+    not_found_cta1: 'Volver al Inicio',
+    not_found_cta2: 'Ver Portafolio',
+  },
+
+};
+
+/* ═══════════════════════════════════════════════════════════
+   LANG SWITCHER CLASS
+   Handles all language switching logic for JCL Staging
+══════════════════════════════════════════════════════════ */
+
+class LangSwitcher {
+
+  constructor(options = {}) {
+    this._lang = this._detectInitialLang();
+    this._storageKey = options.storageKey || 'jcl_lang';
+    this._defaultLang = options.defaultLang || 'en';
+    this._supportedLangs = options.supportedLangs || ['en', 'es'];
+    this._onSwitch = options.onSwitch || null;
+
+    // Apply language on init
+    this._applyLang(this._lang, false);
+  }
+
+  /* ─── Public API ────────────────────────────────────── */
+
+  get current() {
+    return this._lang;
+  }
+
+  get translations() {
+    return window.JCL_I18N[this._lang] || window.JCL_I18N[this._defaultLang];
+  }
+
+  t(key) {
+    const dict = this.translations;
+    return dict[key] !== undefined ? dict[key] : key;
+  }
+
+  switchTo(lang) {
+    if (!this._supportedLangs.includes(lang)) {
+      console.warn(`[JCL i18n] Unsupported language: "${lang}". Supported: ${this._supportedLangs.join(', ')}`);
+      return;
+    }
+    if (lang === this._lang) return;
+
+    const prev = this._lang;
+    this._lang = lang;
+    this._persist(lang);
+    this._applyLang(lang, true);
+
+    if (typeof this._onSwitch === 'function') {
+      this._onSwitch(lang, prev);
+    }
+  }
+
+  toggle() {
+    const next = this._lang === 'en' ? 'es' : 'en';
+    this.switchTo(next);
+  }
+
+  /* ─── DOM Integration ───────────────────────────────── */
+
+  /**
+   * Translates all elements with [data-i18n] attribute.
+   * Supports data-i18n-attr for setting attributes (e.g. placeholder, title).
+   * Example: <span data-i18n="nav_portfolio"></span>
+   *          <input data-i18n="contact_name_placeholder" data-i18n-attr="placeholder">
+   */
+  translateDOM(root = document) {
+    const dict = this.translations;
+
+    // Text content
+    root.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key] !== undefined) {
+        const attr = el.getAttribute('data-i18n-attr');
+        if (attr) {
+          el.setAttribute(attr, dict[key]);
+        } else {
+          el.textContent = dict[key];
+        }
+      }
+    });
+
+    // HTML content (for rich translations)
+    root.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if (dict[key] !== undefined) {
+        el.innerHTML = dict[key];
+      }
+    });
+
+    // Meta tags
+    this._updateMeta();
+  }
+
+  /**
+   * Updates page <title> and meta description based on current page.
+   * Reads data-page attribute from <body> or <html>.
+   */
+  _updateMeta() {
+    const dict = this.translations;
+    const page = document.body.getAttribute('data-page') ||
+                 document.documentElement.getAttribute('data-page') ||
+                 'home';
+
+    const titleKey = `meta_${page}_title`;
+    const descKey  = `meta_${page}_desc`;
+
+    if (dict[titleKey]) {
+      document.title = dict[titleKey];
+    }
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && dict[descKey]) {
+      metaDesc.setAttribute('content', dict[descKey]);
+    }
+  }
+
+  /* ─── Language Toggle Button Binding ───────────────── */
+
+  /**
+   * Binds click handlers to language switch buttons.
+   * Looks for elements with [data-lang-btn] attribute.
+   * Example: <button data-lang-btn="es">ES</button>
+   */
+  bindButtons(root = document) {
+    root.querySelectorAll('[data-lang-btn]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetLang = btn.getAttribute('data-lang-btn');
+        this.switchTo(targetLang);
+      });
+    });
+
+    // Also bind a generic toggle button
+    root.querySelectorAll('[data-lang-toggle]').forEach(btn => {
+      btn.addEventListener('click', () => this.toggle());
+    });
+
+    // Update active state on buttons
+    this._updateButtonStates(root);
+  }
+
+  _updateButtonStates(root = document) {
+    root.querySelectorAll('[data-lang-btn]').forEach(btn => {
+      const btnLang = btn.getAttribute('data-lang-btn');
+      btn.classList.toggle('is-active', btnLang === this._lang);
+      btn.setAttribute('aria-current', btnLang === this._lang ? 'true' : 'false');
+    });
+  }
+
+  /* ─── Internal Helpers ──────────────────────────────── */
+
+  _detectInitialLang() {
+    // 1. Check localStorage
+    try {
+      const stored = localStorage.getItem('jcl_lang');
+      if (stored && ['en', 'es'].includes(stored)) return stored;
+    } catch (_) { /* storage unavailable */ }
+
+    // 2. Check URL param (?lang=es)
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const urlLang = params.get('lang');
+      if (urlLang && ['en', 'es'].includes(urlLang)) return urlLang;
+    } catch (_) { /* URL parsing failed */ }
+
+    // 3. Check browser language
+    const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    if (browserLang.startsWith('es')) return 'es';
+
+    // 4. Default
+    return 'en';
+  }
+
+  _persist(lang) {
+    try {
+      localStorage.setItem(this._storageKey, lang);
+    } catch (_) { /* storage unavailable */ }
+  }
+
+  _applyLang(lang, dispatch = true) {
+    // Set lang attribute on <html>
+    document.documentElement.setAttribute('lang', lang);
+
+    // Apply translations to DOM
+    this.translateDOM();
+
+    // Update any bound buttons
+    this._updateButtonStates();
+
+    // Dispatch custom event
+    if (dispatch) {
+      const event = new CustomEvent('langchange', {
+        bubbles: true,
+        cancelable: false,
+        detail: {
+          lang,
+          prev: this._lang,
+          translations: window.JCL_I18N[lang],
+          switcher: this,
+        }
+      });
+      document.dispatchEvent(event);
+    }
+  }
+}
+
+/* ─── Global Singleton ──────────────────────────────── */
+window.JCL_Lang = new LangSwitcher();
+
+/* ─── Auto-init on DOM ready ────────────────────────── */
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    window.JCL_Lang.translateDOM();
+    window.JCL_Lang.bindButtons();
+  });
+} else {
+  window.JCL_Lang.translateDOM();
+  window.JCL_Lang.bindButtons();
+}
