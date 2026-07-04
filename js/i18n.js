@@ -908,217 +908,84 @@ window.JCL_I18N = {
 };
 
 /* ═══════════════════════════════════════════════════════════
-   LANG SWITCHER CLASS
-   Handles all language switching logic for JCL Staging
+   JCL LANG SWITCHER — Simple & Reliable
 ══════════════════════════════════════════════════════════ */
 
-class LangSwitcher {
+window.JCL_Lang = {
+  current: 'en',
 
-  constructor(options = {}) {
-    this._lang = this._detectInitialLang();
-    this._storageKey = options.storageKey || 'jcl_lang';
-    this._defaultLang = options.defaultLang || 'en';
-    this._supportedLangs = options.supportedLangs || ['en', 'es'];
-    this._onSwitch = options.onSwitch || null;
+  t: function(key) {
+    var dict = window.JCL_I18N[this.current] || window.JCL_I18N['en'];
+    return dict[key] !== undefined ? dict[key] : (window.JCL_I18N['en'][key] || key);
+  },
 
-    // Apply language on init
-    this._applyLang(this._lang, false);
-  }
+  switchTo: function(lang) {
+    if (lang !== 'en' && lang !== 'es') return;
+    this.current = lang;
 
-  /* ─── Public API ────────────────────────────────────── */
+    /* 1. Save preference */
+    try { localStorage.setItem('jcl-lang', lang); } catch(e) {}
 
-  get current() {
-    return this._lang;
-  }
+    /* 2. Update html lang attr */
+    document.documentElement.lang = lang;
 
-  get translations() {
-    return window.JCL_I18N[this._lang] || window.JCL_I18N[this._defaultLang];
-  }
-
-  t(key) {
-    const dict = this.translations;
-    return dict[key] !== undefined ? dict[key] : key;
-  }
-
-  switchTo(lang) {
-    if (!this._supportedLangs.includes(lang)) {
-      console.warn(`[JCL i18n] Unsupported language: "${lang}". Supported: ${this._supportedLangs.join(', ')}`);
-      return;
-    }
-    if (lang === this._lang) return;
-
-    const prev = this._lang;
-    this._lang = lang;
-    this._persist(lang);
-    this._applyLang(lang, true);
-
-    if (typeof this._onSwitch === 'function') {
-      this._onSwitch(lang, prev);
-    }
-  }
-
-  toggle() {
-    const next = this._lang === 'en' ? 'es' : 'en';
-    this.switchTo(next);
-  }
-
-  /* ─── DOM Integration ───────────────────────────────── */
-
-  /**
-   * Translates all elements with [data-i18n] attribute.
-   * Supports data-i18n-attr for setting attributes (e.g. placeholder, title).
-   * Example: <span data-i18n="nav_portfolio"></span>
-   *          <input data-i18n="contact_name_placeholder" data-i18n-attr="placeholder">
-   */
-  translateDOM(root = document) {
-    const dict = this.translations;
-
-    // Text content
-    root.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (dict[key] !== undefined) {
-        const attr = el.getAttribute('data-i18n-attr');
-        if (attr) {
-          el.setAttribute(attr, dict[key]);
-        } else {
-          el.textContent = dict[key];
-        }
-      }
+    /* 3. Translate every tagged element */
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      var val = window.JCL_Lang.t(key);
+      if (val && val !== key) el.textContent = val;
     });
 
-    // HTML content (for rich translations)
-    root.querySelectorAll('[data-i18n-html]').forEach(el => {
-      const key = el.getAttribute('data-i18n-html');
-      if (dict[key] !== undefined) {
-        el.innerHTML = dict[key];
-      }
+    /* 4. Update placeholders */
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      var val = window.JCL_Lang.t(key);
+      if (val && val !== key) el.placeholder = val;
     });
 
-    // Meta tags
-    this._updateMeta();
-  }
+    /* 5. Update page title */
+    var page = document.body.getAttribute('data-page') || 'home';
+    var titleKey = 'meta_' + page + '_title';
+    var title = window.JCL_Lang.t(titleKey);
+    if (title && title !== titleKey) document.title = title;
 
-  /**
-   * Updates page <title> and meta description based on current page.
-   * Reads data-page attribute from <body> or <html>.
-   */
-  _updateMeta() {
-    const dict = this.translations;
-    const page = document.body.getAttribute('data-page') ||
-                 document.documentElement.getAttribute('data-page') ||
-                 'home';
+    /* 6. Mark active button */
+    document.querySelectorAll('[data-lang-btn]').forEach(function(btn) {
+      var isActive = btn.getAttribute('data-lang-btn') === lang;
+      btn.classList.toggle('is-active', isActive);
+      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
 
-    const titleKey = `meta_${page}_title`;
-    const descKey  = `meta_${page}_desc`;
+    /* 7. Notify Olivia and others */
+    document.dispatchEvent(new CustomEvent('langchange', { detail: { lang: lang } }));
+  },
 
-    if (dict[titleKey]) {
-      document.title = dict[titleKey];
-    }
+  init: function() {
+    /* Detect saved or browser language */
+    var saved = null;
+    try { saved = localStorage.getItem('jcl-lang'); } catch(e) {}
+    var urlParam = new URLSearchParams(window.location.search).get('lang');
+    var browserLang = (navigator.language || '').toLowerCase().startsWith('es') ? 'es' : 'en';
+    var lang = (urlParam === 'en' || urlParam === 'es') ? urlParam
+             : (saved === 'en' || saved === 'es') ? saved
+             : browserLang;
 
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && dict[descKey]) {
-      metaDesc.setAttribute('content', dict[descKey]);
-    }
-  }
-
-  /* ─── Language Toggle Button Binding ───────────────── */
-
-  /**
-   * Binds click handlers to language switch buttons.
-   * Looks for elements with [data-lang-btn] attribute.
-   * Example: <button data-lang-btn="es">ES</button>
-   */
-  bindButtons(root = document) {
-    root.querySelectorAll('[data-lang-btn]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const targetLang = btn.getAttribute('data-lang-btn');
-        this.switchTo(targetLang);
+    /* Bind all lang buttons */
+    document.querySelectorAll('[data-lang-btn]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        window.JCL_Lang.switchTo(btn.getAttribute('data-lang-btn'));
       });
     });
 
-    // Also bind a generic toggle button
-    root.querySelectorAll('[data-lang-toggle]').forEach(btn => {
-      btn.addEventListener('click', () => this.toggle());
-    });
-
-    // Update active state on buttons
-    this._updateButtonStates(root);
+    /* Apply initial language */
+    window.JCL_Lang.switchTo(lang);
   }
+};
 
-  _updateButtonStates(root = document) {
-    root.querySelectorAll('[data-lang-btn]').forEach(btn => {
-      const btnLang = btn.getAttribute('data-lang-btn');
-      btn.classList.toggle('is-active', btnLang === this._lang);
-      btn.setAttribute('aria-current', btnLang === this._lang ? 'true' : 'false');
-    });
-  }
-
-  /* ─── Internal Helpers ──────────────────────────────── */
-
-  _detectInitialLang() {
-    // 1. Check localStorage
-    try {
-      const stored = localStorage.getItem('jcl_lang');
-      if (stored && ['en', 'es'].includes(stored)) return stored;
-    } catch (_) { /* storage unavailable */ }
-
-    // 2. Check URL param (?lang=es)
-    try {
-      const params = new URLSearchParams(window.location.search);
-      const urlLang = params.get('lang');
-      if (urlLang && ['en', 'es'].includes(urlLang)) return urlLang;
-    } catch (_) { /* URL parsing failed */ }
-
-    // 3. Check browser language
-    const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    if (browserLang.startsWith('es')) return 'es';
-
-    // 4. Default
-    return 'en';
-  }
-
-  _persist(lang) {
-    try {
-      localStorage.setItem(this._storageKey, lang);
-    } catch (_) { /* storage unavailable */ }
-  }
-
-  _applyLang(lang, dispatch = true) {
-    // Set lang attribute on <html>
-    document.documentElement.setAttribute('lang', lang);
-
-    // Apply translations to DOM
-    this.translateDOM();
-
-    // Update any bound buttons
-    this._updateButtonStates();
-
-    // Dispatch custom event
-    if (dispatch) {
-      const event = new CustomEvent('langchange', {
-        bubbles: true,
-        cancelable: false,
-        detail: {
-          lang,
-          prev: this._lang,
-          translations: window.JCL_I18N[lang],
-          switcher: this,
-        }
-      });
-      document.dispatchEvent(event);
-    }
-  }
-}
-
-/* ─── Boot: wait for DOM then init ─────────────────── */
-function _jclI18nInit() {
-  window.JCL_Lang = new LangSwitcher();
-  window.JCL_Lang.translateDOM();
-  window.JCL_Lang.bindButtons();
-}
-
+/* Boot after DOM is ready */
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', _jclI18nInit);
+  document.addEventListener('DOMContentLoaded', function() { window.JCL_Lang.init(); });
 } else {
-  _jclI18nInit();
+  window.JCL_Lang.init();
 }
+
