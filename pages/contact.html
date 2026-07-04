@@ -50,7 +50,12 @@
       <a href="concierge.html" class="nav__link" data-i18n="nav_concierge">AI Concierge</a>
     </nav>
     <div class="nav__actions"><a href="consultation.html" class="nav__cta" data-i18n="nav_book">Book Consultation</a>
+        
+        <div class="lang-switcher" role="group" aria-label="Language selector">
+          <button class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang-btn="es" aria-pressed="false">ES</button>
         </div>
+      </div>
     <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
       <span class="nav__toggle-line"></span>
       <span class="nav__toggle-line"></span>
@@ -68,6 +73,10 @@
       <li><a href="contact.html" class="nav-mobile__link">Contact</a></li>
       <li><a href="consultation.html" class="nav-mobile__link" data-i18n="nav_book">Book Consultation</a></li>
     </ul>
+    <div class="nav-mobile__lang" style="display:flex;gap:0;margin:1.5rem auto 0;border:1px solid rgba(184,160,122,0.3);border-radius:3px;overflow:hidden;width:fit-content">
+        <button class="lang-btn nav-mobile__lang-btn" data-lang-btn="en" aria-pressed="true" style="padding:0.6rem 1.5rem;font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;font-family:var(--font-sans);background:transparent;border:none;color:var(--color-taupe);cursor:pointer">EN</button>
+        <button class="lang-btn nav-mobile__lang-btn" data-lang-btn="es" aria-pressed="false" style="padding:0.6rem 1.5rem;font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;font-family:var(--font-sans);background:transparent;border-left:1px solid rgba(184,160,122,0.3);color:var(--color-taupe);cursor:pointer">ES</button>
+      </div>
     <div class="nav-mobile__bottom">
       <a href="https://www.instagram.com/jclstagingdesign/" class="nav-mobile__social-link" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.pinterest.com/jclstagingdesign/" class="nav-mobile__social-link" target="_blank" rel="noopener">Pinterest</a>

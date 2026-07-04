@@ -61,7 +61,12 @@
       <a class="nav__link" href="concierge.html">AI Concierge</a>
     </nav>
     <div class="nav__actions"><a class="nav__cta" href="consultation.html" data-i18n="nav_book">Book Consultation</a>
+        
+        <div class="lang-switcher" role="group" aria-label="Language selector">
+          <button class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang-btn="es" aria-pressed="false">ES</button>
         </div>
+      </div>
     <button class="nav__toggle" aria-label="Open menu">
       <span class="nav__toggle-line"></span>
       <span class="nav__toggle-line"></span>
@@ -80,6 +85,10 @@
       <li><a class="nav-mobile__link" href="concierge.html">AI Concierge</a></li>
       <li><a class="nav-mobile__link" href="consultation.html">Book Consultation</a></li>
     </ul>
+    <div class="nav-mobile__lang" style="display:flex;gap:0;margin:1.5rem auto 0;border:1px solid rgba(184,160,122,0.3);border-radius:3px;overflow:hidden;width:fit-content">
+        <button class="lang-btn nav-mobile__lang-btn" data-lang-btn="en" aria-pressed="true" style="padding:0.6rem 1.5rem;font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;font-family:var(--font-sans);background:transparent;border:none;color:var(--color-taupe);cursor:pointer">EN</button>
+        <button class="lang-btn nav-mobile__lang-btn" data-lang-btn="es" aria-pressed="false" style="padding:0.6rem 1.5rem;font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;font-family:var(--font-sans);background:transparent;border-left:1px solid rgba(184,160,122,0.3);color:var(--color-taupe);cursor:pointer">ES</button>
+      </div>
     <div class="nav-mobile__bottom">
       <a href="https://instagram.com" class="nav-mobile__social-link" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
       <a href="https://linkedin.com" class="nav-mobile__social-link" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
@@ -489,6 +498,7 @@
       </button>
     </div>
   </div>
+  <script src="../js/i18n.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>
