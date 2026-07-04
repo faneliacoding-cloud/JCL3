@@ -1110,16 +1110,15 @@ class LangSwitcher {
   }
 }
 
-/* ─── Global Singleton ──────────────────────────────── */
-window.JCL_Lang = new LangSwitcher();
-
-/* ─── Auto-init on DOM ready ────────────────────────── */
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => {
-    window.JCL_Lang.translateDOM();
-    window.JCL_Lang.bindButtons();
-  });
-} else {
+/* ─── Boot: wait for DOM then init ─────────────────── */
+function _jclI18nInit() {
+  window.JCL_Lang = new LangSwitcher();
   window.JCL_Lang.translateDOM();
   window.JCL_Lang.bindButtons();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', _jclI18nInit);
+} else {
+  _jclI18nInit();
 }
