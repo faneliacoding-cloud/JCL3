@@ -1022,19 +1022,5 @@
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
-
-<!-- LANG DEBUG — remove after testing -->
-<div id="lang-debug" style="position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:999999;background:#2C2825;color:#F5F0E8;padding:12px 20px;border-radius:4px;font-family:sans-serif;font-size:13px;display:flex;gap:12px;align-items:center;box-shadow:0 4px 20px rgba(0,0,0,0.4)">
-  <span>Lang test:</span>
-  <button onclick="window.JCL_Lang.switchTo('en')" style="background:#B8A07A;color:#fff;border:none;padding:6px 14px;border-radius:3px;cursor:pointer;font-size:12px">EN</button>
-  <button onclick="window.JCL_Lang.switchTo('es')" style="background:#B8A07A;color:#fff;border:none;padding:6px 14px;border-radius:3px;cursor:pointer;font-size:12px">ES</button>
-  <span id="lang-debug-status" style="color:#B8A07A">ready</span>
-</div>
-<script>
-document.addEventListener('langchange', function(e) {
-  var s = document.getElementById('lang-debug-status');
-  if (s) s.textContent = 'switched to: ' + e.detail.lang;
-});
-</script>
 </body>
 </html>
