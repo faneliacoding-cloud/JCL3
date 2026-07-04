@@ -235,6 +235,11 @@ ul, ol { list-style: none; }
   transition: background var(--dur-fast), transform var(--dur-fast);
 }
 .nav__cta:hover { background: var(--color-champagne-dk); transform: translateY(-1px); }
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .nav__toggle {
   display: none; flex-direction: column; gap: 7px;
   cursor: none; z-index: 10002; padding: 4px;
